@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "C:\Users\hecto\Documents\Codex\2026-10-19\c-users-hecto-documents-kicad-projects\work\finalize_native.py", line 26, in <module>
+    f=fps[a['ref']];a['xy']=[p.ToMM(f.GetPosition().x),p.ToMM(f.GetPosition().y)];a['fp']=f.GetFPID().GetLibNickname()+':'+f.GetFPID().GetLibItemName()
+                                                                                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+TypeError: unsupported operand type(s) for +: 'UTF8' and 'str'

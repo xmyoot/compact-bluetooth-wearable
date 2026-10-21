@@ -1,0 +1,12 @@
+{
+  "footprints": 50,
+  "track_segments": 868,
+  "vias": 140,
+  "minimum_track_mm": 0.15,
+  "via_sizes_mm": [
+    [
+      0.6,
+      0.3
+    ]
+  ]
+}

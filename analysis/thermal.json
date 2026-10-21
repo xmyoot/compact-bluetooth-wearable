@@ -1,0 +1,92 @@
+{
+  "analyzer_type": "thermal",
+  "schema_version": "1.4.0",
+  "inputs": {
+    "source_files": [
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\schematic.json",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\pcb.json"
+    ],
+    "source_hashes": {
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\schematic.json": "5c4227e10e9939f3b8576f688a47c8239f7f5af30db216385a5481551acb1cae",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\pcb.json": "c056f7a47b880e2b1ecc9d5755730b3d524c1753a8ed0ae484de79fb9dc5b167"
+    },
+    "run_id": "20261020T045938Z-d91383",
+    "config_hash": null,
+    "upstream_artifacts": {
+      "schematic": {
+        "path": "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\schematic.json",
+        "sha256": "5c4227e10e9939f3b8576f688a47c8239f7f5af30db216385a5481551acb1cae",
+        "schema_version": "1.4.0",
+        "run_id": "20261020T045938Z-d91383"
+      },
+      "pcb": {
+        "path": "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\pcb.json",
+        "sha256": "c056f7a47b880e2b1ecc9d5755730b3d524c1753a8ed0ae484de79fb9dc5b167",
+        "schema_version": "1.4.0",
+        "run_id": "20261020T045938Z-d91383"
+      }
+    }
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "summary": {
+    "total_findings": 0,
+    "components_assessed": 0,
+    "components_skipped": 2,
+    "active": 0,
+    "suppressed": 0,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 0
+    },
+    "thermal_score": null,
+    "skipped_reason": "No components had quantifiable power dissipation data (missing MPNs or no datasheet extraction cache)",
+    "total_board_dissipation_w": 0,
+    "components_analyzed": 0,
+    "components_above_85c": 0,
+    "components_above_tjmax": 0,
+    "ambient_c": 40.0
+  },
+  "findings": [],
+  "assessments": [],
+  "elapsed_s": 0.0,
+  "skipped_components": [
+    {
+      "ref": "U3",
+      "value": "TPS7A2030PDBVR",
+      "reason": "no_pdiss_estimate"
+    },
+    {
+      "ref": "U2",
+      "value": "BQ24074RGTR",
+      "reason": "no_vout"
+    }
+  ],
+  "trust_summary": {
+    "total_findings": 0,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 0,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 0,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": null
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261020T045938Z-d91383"
+  }
+}

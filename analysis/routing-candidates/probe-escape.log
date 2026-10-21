@@ -1,0 +1,53 @@
+(101.2, 94.4)
+VIA track LED_STATUS (103.8, 94.0) 0
+VIA track SWDIO (101.2, 99.6) 2
+STUB pad ACC_INT U1.27 0
+STUB track SWDIO (101.2, 99.6) 2
+(101.2, 94.0)
+VIA track LED_STATUS (103.8, 94.0) 0
+VIA track SWDIO (101.2, 99.6) 2
+STUB track LED_STATUS (103.8, 94.0) 0
+STUB pad ACC_INT U1.27 0
+STUB track SWDIO (101.2, 99.6) 2
+(100.5, 94.5)
+VIA track LED_STATUS (103.8, 94.0) 0
+VIA track CHG_EN1 (100.1, 95.9) 2
+VIA pad  U1.25 0
+STUB pad  U1.25 0
+STUB pad ACC_INT U1.27 0
+STUB track SWDIO (101.2, 99.6) 2
+(101.9, 94.4)
+VIA track LED_STATUS (103.8, 94.0) 0
+VIA track I2C_SCL (101.9, 91.9) 2
+STUB track I2C_SCL (101.9, 91.9) 2
+STUB pad ACC_INT U1.27 0
+STUB track SWDIO (101.2, 99.6) 2
+(101.2, 93.5)
+VIA track CHG_EN1 (100.8, 93.2) 0
+VIA via CHG_EN1 (100.6, 93.4) -1
+VIA track LED_STATUS (103.8, 94.0) 0
+VIA track SWDIO (101.2, 99.6) 2
+STUB track CHG_EN1 (100.8, 93.2) 0
+STUB track LED_STATUS (103.8, 94.0) 0
+STUB pad ACC_INT U1.27 0
+STUB track SWDIO (101.2, 99.6) 2
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'PCB_TRACK *', no destructor found.
+swig/python detected a memory leak of type 'std::shared_ptr< SHAPE_POLY_SET > *', no destructor found.
+swig/python detected a memory leak of type 'std::shared_ptr< SHAPE_LINE_CHAIN > *', no destructor found.

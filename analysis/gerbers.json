@@ -1,0 +1,1139 @@
+{
+  "analyzer_type": "gerber",
+  "schema_version": "1.4.0",
+  "directory": "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers",
+  "generator": "Pcbnew 10.0.7",
+  "layer_count": 4,
+  "board_dimensions": {
+    "width_mm": 40.05,
+    "height_mm": 38.05,
+    "area_mm2": 1523.7,
+    "source": "gbrjob"
+  },
+  "statistics": {
+    "gerber_files": 11,
+    "drill_files": 1,
+    "total_holes": 157,
+    "total_flashes": 1287,
+    "total_draws": 10291
+  },
+  "completeness": {
+    "found_layers": [
+      "B.Cu",
+      "B.Mask",
+      "B.Paste",
+      "B.SilkS",
+      "Edge.Cuts",
+      "F.Cu",
+      "F.Mask",
+      "F.Paste",
+      "F.SilkS",
+      "In1.Cu",
+      "In2.Cu"
+    ],
+    "expected_layers": [
+      "B.Cu",
+      "B.Mask",
+      "B.Paste",
+      "B.SilkS",
+      "Edge.Cuts",
+      "F.Cu",
+      "F.Mask",
+      "F.Paste",
+      "F.SilkS",
+      "In1.Cu",
+      "In2.Cu"
+    ],
+    "missing": [],
+    "extra": [],
+    "has_pth_drill": true,
+    "has_npth_drill": true,
+    "complete": true,
+    "source": "gbrjob"
+  },
+  "alignment": {
+    "aligned": false,
+    "issues": [
+      "Width varies by 6.5mm across copper/edge layers",
+      "Height varies by 6.9mm across copper/edge layers"
+    ],
+    "layer_extents": {
+      "B.Cu": {
+        "width": 34.4,
+        "height": 31.075
+      },
+      "B.Mask": {
+        "width": 30.888,
+        "height": 27.575
+      },
+      "B.Paste": {
+        "width": 2.663,
+        "height": 3.15
+      },
+      "B.SilkS": {
+        "width": 31.83,
+        "height": 20.0
+      },
+      "Edge.Cuts": {
+        "width": 39.995,
+        "height": 38.0
+      },
+      "F.Cu": {
+        "width": 33.5,
+        "height": 31.375
+      },
+      "F.Mask": {
+        "width": 31.325,
+        "height": 31.325
+      },
+      "F.Paste": {
+        "width": 29.65,
+        "height": 31.325
+      },
+      "F.SilkS": {
+        "width": 32.847,
+        "height": 34.372
+      },
+      "In1.Cu": {
+        "width": 39.494,
+        "height": 32.7
+      },
+      "In2.Cu": {
+        "width": 39.494,
+        "height": 32.7
+      },
+      "drill_mixed": {
+        "width": 33.5,
+        "height": 30.9
+      }
+    }
+  },
+  "drill_classification": {
+    "vias": {
+      "count": 140,
+      "tools": [
+        {
+          "diameter_mm": 0.3,
+          "count": 140
+        }
+      ]
+    },
+    "component_holes": {
+      "count": 17,
+      "tools": [
+        {
+          "diameter_mm": 0.6,
+          "count": 4
+        },
+        {
+          "diameter_mm": 0.65,
+          "count": 6
+        },
+        {
+          "diameter_mm": 0.65,
+          "count": 2
+        },
+        {
+          "diameter_mm": 0.75,
+          "count": 3
+        },
+        {
+          "diameter_mm": 0.9,
+          "count": 2
+        }
+      ]
+    },
+    "mounting_holes": {
+      "count": 0,
+      "tools": []
+    },
+    "classification_method": "x2_attributes"
+  },
+  "pad_summary": {
+    "smd_apertures": 211,
+    "via_apertures": 560,
+    "heatsink_apertures": 2,
+    "tht_holes": 17,
+    "smd_source": "x2_aperture_function",
+    "smd_ratio": 0.93
+  },
+  "trace_widths": {
+    "unique_widths_mm": [
+      0.15,
+      0.598
+    ],
+    "min_trace_mm": 0.15,
+    "max_trace_mm": 0.598,
+    "width_count": 2,
+    "min_feature_mm": 0.125
+  },
+  "component_analysis": {
+    "total_unique": 50,
+    "front_side": 42,
+    "back_side": 8,
+    "component_refs": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "D1",
+      "D2",
+      "J1",
+      "J2",
+      "J3",
+      "R1",
+      "R10",
+      "R11",
+      "R12",
+      "R13",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "SW1",
+      "SW2",
+      "SW3",
+      "TP1",
+      "TP2",
+      "TP3",
+      "TP4",
+      "TP5",
+      "TP6",
+      "U1",
+      "U2",
+      "U3",
+      "U4",
+      "U5"
+    ],
+    "has_x2_data": true,
+    "pads_per_component": {
+      "C1": 2,
+      "C10": 2,
+      "C11": 2,
+      "C12": 2,
+      "C2": 2,
+      "C3": 2,
+      "C4": 2,
+      "C5": 2,
+      "C6": 2,
+      "C7": 2,
+      "C8": 2,
+      "C9": 2,
+      "D1": 2,
+      "D2": 6,
+      "J1": 22,
+      "J2": 3,
+      "J3": 6,
+      "R1": 2,
+      "R10": 2,
+      "R11": 2,
+      "R12": 2,
+      "R13": 2,
+      "R14": 2,
+      "R15": 2,
+      "R16": 2,
+      "R17": 2,
+      "R18": 2,
+      "R19": 2,
+      "R2": 2,
+      "R3": 2,
+      "R4": 2,
+      "R5": 2,
+      "R6": 2,
+      "R7": 2,
+      "R8": 2,
+      "R9": 2,
+      "SW1": 9,
+      "SW2": 4,
+      "SW3": 4,
+      "TP1": 1,
+      "TP2": 1,
+      "TP3": 1,
+      "TP4": 1,
+      "TP5": 1,
+      "TP6": 1,
+      "U1": 61,
+      "U2": 20,
+      "U3": 5,
+      "U4": 16,
+      "U5": 8
+    },
+    "total_pads": 234
+  },
+  "net_analysis": {
+    "total_unique": 78,
+    "named_nets": 33,
+    "unnamed_nets": 45,
+    "power_nets": [],
+    "signal_nets": [
+      "",
+      "/+3V0",
+      "/ACC_INT",
+      "/ACC_SA0",
+      "/BAT_NTC",
+      "/BAT_SENSE",
+      "/CC1",
+      "/CC2",
+      "/CHARGE_N",
+      "/CHG_EN1",
+      "/CHG_EN2",
+      "/GND",
+      "/I2C_SCL",
+      "/I2C_SDA",
+      "/ILIM",
+      "/ISET",
+      "/LED_K",
+      "/LED_STATUS",
+      "/PGOOD_N",
+      "/POWER_EN",
+      "/RESET_N",
+      "/SWCLK",
+      "/SWDIO",
+      "/TEMP_ALERT",
+      "/USB_CONN_N",
+      "/USB_CONN_P",
+      "/USB_N",
+      "/USB_P",
+      "/USER_N",
+      "/VBAT",
+      "/VBUS",
+      "/VSYS",
+      "N/C"
+    ],
+    "total_pins": 216
+  },
+  "gerbers": [
+    {
+      "filename": "Compact-Bluetooth-Wearable-B_Cu.gbl",
+      "layer_type": "B.Cu",
+      "units": "mm",
+      "aperture_count": 12,
+      "flash_count": 168,
+      "draw_count": 245,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L4,Bot",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "ComponentPad": 6,
+          "SMDPad": 3,
+          "HeatsinkPad": 1,
+          "ViaPad": 1,
+          "Conductor": 1
+        },
+        "by_function_flashes": {
+          "ComponentPad": 13,
+          "SMDPad": 14,
+          "HeatsinkPad": 1,
+          "ViaPad": 140,
+          "Conductor": 0
+        },
+        "conductor_widths_mm": [
+          0.15
+        ],
+        "min_feature_mm": 0.15
+      },
+      "x2_component_count": 0,
+      "x2_net_count": 27,
+      "x2_pin_count": 25
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-B_Mask.gbs",
+      "layer_type": "B.Mask",
+      "units": "mm",
+      "aperture_count": 11,
+      "flash_count": 32,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Soldermask,Bot",
+        "FilePolarity": "Negative"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.1875
+      },
+      "x2_component_count": 12,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-B_Paste.gbp",
+      "layer_type": "B.Paste",
+      "units": "mm",
+      "aperture_count": 3,
+      "flash_count": 10,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Paste,Bot",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.1875
+      },
+      "x2_component_count": 2,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-B_Silkscreen.gbo",
+      "layer_type": "B.SilkS",
+      "units": "mm",
+      "aperture_count": 2,
+      "flash_count": 0,
+      "draw_count": 79,
+      "region_count": 1,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Legend,Bot",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.12
+      },
+      "x2_component_count": 8,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-Edge_Cuts.gm1",
+      "layer_type": "Edge.Cuts",
+      "units": "mm",
+      "aperture_count": 1,
+      "flash_count": 0,
+      "draw_count": 129,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Profile,NP"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "Profile": 1
+        },
+        "by_function_flashes": {
+          "Profile": 0
+        },
+        "min_feature_mm": 0.05
+      }
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-F_Cu.gtl",
+      "layer_type": "F.Cu",
+      "units": "mm",
+      "aperture_count": 27,
+      "flash_count": 351,
+      "draw_count": 558,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L1,Top",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "SMDPad": 17,
+          "ComponentPad": 6,
+          "HeatsinkPad": 1,
+          "ViaPad": 1,
+          "Conductor": 2
+        },
+        "by_function_flashes": {
+          "SMDPad": 197,
+          "ComponentPad": 13,
+          "HeatsinkPad": 1,
+          "ViaPad": 140,
+          "Conductor": 0
+        },
+        "conductor_widths_mm": [
+          0.15,
+          0.598
+        ],
+        "min_feature_mm": 0.125
+      },
+      "x2_component_count": 0,
+      "x2_net_count": 77,
+      "x2_pin_count": 201
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-F_Mask.gts",
+      "layer_type": "F.Mask",
+      "units": "mm",
+      "aperture_count": 26,
+      "flash_count": 215,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Soldermask,Top",
+        "FilePolarity": "Negative"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.125
+      },
+      "x2_component_count": 42,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-F_Paste.gtp",
+      "layer_type": "F.Paste",
+      "units": "mm",
+      "aperture_count": 20,
+      "flash_count": 205,
+      "draw_count": 0,
+      "region_count": 0,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Paste,Top",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.125
+      },
+      "x2_component_count": 40,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-F_Silkscreen.gto",
+      "layer_type": "F.SilkS",
+      "units": "mm",
+      "aperture_count": 1,
+      "flash_count": 0,
+      "draw_count": 194,
+      "region_count": 5,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Legend,Top",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "min_feature_mm": 0.12
+      },
+      "x2_component_count": 42,
+      "x2_net_count": 0,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-In1_Cu.g1",
+      "layer_type": "In1.Cu",
+      "units": "mm",
+      "aperture_count": 8,
+      "flash_count": 153,
+      "draw_count": 4545,
+      "region_count": 1,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L2,Inr",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "ComponentPad": 6,
+          "ViaPad": 1,
+          "Conductor": 1
+        },
+        "by_function_flashes": {
+          "ComponentPad": 13,
+          "ViaPad": 140,
+          "Conductor": 0
+        },
+        "conductor_widths_mm": [
+          0.15
+        ],
+        "min_feature_mm": 0.15
+      },
+      "x2_component_count": 3,
+      "x2_net_count": 26,
+      "x2_pin_count": 0
+    },
+    {
+      "filename": "Compact-Bluetooth-Wearable-In2_Cu.g2",
+      "layer_type": "In2.Cu",
+      "units": "mm",
+      "aperture_count": 8,
+      "flash_count": 153,
+      "draw_count": 4541,
+      "region_count": 1,
+      "x2_attributes": {
+        "GenerationSoftware": "KiCad,Pcbnew,10.0.7",
+        "CreationDate": "2026-10-20T16:40:40-07:00",
+        "ProjectId": "Compact-Bluetooth-Wearable,436f6d70-6163-4742-9d42-6c7565746f6f,A-DRAFT",
+        "SameCoordinates": "Original",
+        "FileFunction": "Copper,L3,Inr",
+        "FilePolarity": "Positive"
+      },
+      "aperture_analysis": {
+        "by_function": {
+          "ComponentPad": 6,
+          "ViaPad": 1,
+          "Conductor": 1
+        },
+        "by_function_flashes": {
+          "ComponentPad": 13,
+          "ViaPad": 140,
+          "Conductor": 0
+        },
+        "conductor_widths_mm": [
+          0.15
+        ],
+        "min_feature_mm": 0.15
+      },
+      "x2_component_count": 3,
+      "x2_net_count": 26,
+      "x2_pin_count": 0
+    }
+  ],
+  "drills": [
+    {
+      "filename": "Compact-Bluetooth-Wearable.drl",
+      "type": "mixed",
+      "units": "mm",
+      "hole_count": 157,
+      "tools": {
+        "T1": {
+          "diameter_mm": 0.3,
+          "hole_count": 140,
+          "aper_function": "Plated,PTH,ViaDrill"
+        },
+        "T2": {
+          "diameter_mm": 0.6,
+          "hole_count": 4,
+          "aper_function": "Plated,PTH,ComponentDrill"
+        },
+        "T3": {
+          "diameter_mm": 0.65,
+          "hole_count": 6,
+          "aper_function": "Plated,PTH,ComponentDrill"
+        },
+        "T4": {
+          "diameter_mm": 0.75,
+          "hole_count": 3,
+          "aper_function": "Plated,PTH,ComponentDrill"
+        },
+        "T5": {
+          "diameter_mm": 0.65,
+          "hole_count": 2,
+          "aper_function": "NonPlated,NPTH,ComponentDrill"
+        },
+        "T6": {
+          "diameter_mm": 0.9,
+          "hole_count": 2,
+          "aper_function": "NonPlated,NPTH,ComponentDrill"
+        }
+      },
+      "layer_span": [
+        1,
+        4
+      ],
+      "x2_attributes": {
+        "CreationDate": "2026-10-20T16:40:41-07:00",
+        "GenerationSoftware": "Kicad,Pcbnew,10.0.7",
+        "FileFunction": "MixedPlating,1,4"
+      }
+    }
+  ],
+  "drill_tools": {
+    "0.3mm": {
+      "diameter_mm": 0.3,
+      "count": 140,
+      "type": "mixed"
+    },
+    "0.6mm": {
+      "diameter_mm": 0.6,
+      "count": 4,
+      "type": "mixed"
+    },
+    "0.65mm": {
+      "diameter_mm": 0.65,
+      "count": 8,
+      "type": "mixed"
+    },
+    "0.75mm": {
+      "diameter_mm": 0.75,
+      "count": 3,
+      "type": "mixed"
+    },
+    "0.9mm": {
+      "diameter_mm": 0.9,
+      "count": 2,
+      "type": "mixed"
+    }
+  },
+  "job_file": {
+    "generator": "Pcbnew 10.0.7",
+    "vendor": "KiCad",
+    "creation_date": "2026-10-20T16:40:40-07:00",
+    "board_width_mm": 40.0453,
+    "board_height_mm": 38.05,
+    "layer_count": 4,
+    "board_thickness_mm": 1.0,
+    "finish": "None",
+    "project_name": "Compact-Bluetooth-Wearable",
+    "design_rules": [
+      {
+        "layers": "Outer",
+        "PadToPad": 0.15,
+        "PadToTrack": 0.15,
+        "TrackToTrack": 0.15,
+        "MinLineWidth": 0.15
+      },
+      {
+        "layers": "Inner",
+        "PadToPad": 0.0,
+        "PadToTrack": 0.0,
+        "TrackToTrack": 0.15,
+        "MinLineWidth": 0.15,
+        "TrackToRegion": 0.2,
+        "RegionToRegion": 0.2
+      }
+    ],
+    "expected_files": [
+      {
+        "path": "Compact-Bluetooth-Wearable-F_Cu.gtl",
+        "function": "Copper,L1,Top",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-In1_Cu.g1",
+        "function": "Copper,L2,Inr",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-In2_Cu.g2",
+        "function": "Copper,L3,Inr",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-B_Cu.gbl",
+        "function": "Copper,L4,Bot",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-F_Paste.gtp",
+        "function": "SolderPaste,Top",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-B_Paste.gbp",
+        "function": "SolderPaste,Bot",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-F_Silkscreen.gto",
+        "function": "Legend,Top",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-B_Silkscreen.gbo",
+        "function": "Legend,Bot",
+        "polarity": "Positive"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-F_Mask.gts",
+        "function": "SolderMask,Top",
+        "polarity": "Negative"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-B_Mask.gbs",
+        "function": "SolderMask,Bot",
+        "polarity": "Negative"
+      },
+      {
+        "path": "Compact-Bluetooth-Wearable-Edge_Cuts.gm1",
+        "function": "Profile",
+        "polarity": "Positive"
+      }
+    ],
+    "stackup": [
+      {
+        "type": "Legend",
+        "name": "Top Silk Screen"
+      },
+      {
+        "type": "SolderPaste",
+        "name": "Top Solder Paste"
+      },
+      {
+        "type": "SolderMask",
+        "name": "Top Solder Mask",
+        "thickness_mm": 0.01
+      },
+      {
+        "type": "Copper",
+        "name": "F.Cu",
+        "thickness_mm": 0.035
+      },
+      {
+        "type": "Dielectric",
+        "name": "F.Cu/In1.Cu",
+        "thickness_mm": 0.28,
+        "material": "FR4"
+      },
+      {
+        "type": "Copper",
+        "name": "In1.Cu",
+        "thickness_mm": 0.035
+      },
+      {
+        "type": "Dielectric",
+        "name": "In1.Cu/In2.Cu",
+        "thickness_mm": 0.28,
+        "material": "FR4"
+      },
+      {
+        "type": "Copper",
+        "name": "In2.Cu",
+        "thickness_mm": 0.035
+      },
+      {
+        "type": "Dielectric",
+        "name": "In2.Cu/B.Cu",
+        "thickness_mm": 0.28,
+        "material": "FR4"
+      },
+      {
+        "type": "Copper",
+        "name": "B.Cu",
+        "thickness_mm": 0.035
+      },
+      {
+        "type": "SolderMask",
+        "name": "Bottom Solder Mask",
+        "thickness_mm": 0.01
+      },
+      {
+        "type": "SolderPaste",
+        "name": "Bottom Solder Paste"
+      },
+      {
+        "type": "Legend",
+        "name": "Bottom Silk Screen"
+      }
+    ]
+  },
+  "findings": [
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-002",
+      "category": "gerber_alignment",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Alignment: Width varies by 6.5mm across copper/edge layers",
+      "description": "Layer alignment issue: Width varies by 6.5mm across copper/edge layers",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+      "report_context": {
+        "section": "Gerber Alignment",
+        "impact": "Layer misregistration",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-002:27e1dcd5f63e"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-002",
+      "category": "gerber_alignment",
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "summary": "Alignment: Height varies by 6.9mm across copper/edge layers",
+      "description": "Layer alignment issue: Height varies by 6.9mm across copper/edge layers",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+      "report_context": {
+        "section": "Gerber Alignment",
+        "impact": "Layer misregistration",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-002:4c85073571e3"
+    },
+    {
+      "detector": "analyze_gerbers",
+      "rule_id": "GR-004",
+      "category": "gerber_completeness",
+      "severity": "warning",
+      "confidence": "heuristic",
+      "evidence_source": "topology",
+      "summary": "B paste layer: 10 flashes vs 168 copper (6%)",
+      "description": "B-side paste layer has significantly fewer flashes (10) than copper layer (168). This may indicate missing solder paste apertures.",
+      "components": [],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Check solder paste aperture generation \u2014 missing apertures cause assembly defects.",
+      "report_context": {
+        "section": "Gerber Completeness",
+        "impact": "Assembly solder joint quality",
+        "standard_ref": ""
+      },
+      "stages": [
+        "pre_fab"
+      ],
+      "finding_id": "gerber:GR-004:53512337143a"
+    }
+  ],
+  "assessments": [],
+  "summary": {
+    "total_findings": 3,
+    "by_severity": {
+      "error": 0,
+      "warning": 3,
+      "info": 0
+    }
+  },
+  "trust_summary": {
+    "total_findings": 3,
+    "trust_level": "mixed",
+    "by_confidence": {
+      "deterministic": 2,
+      "heuristic": 1,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 3,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": 0.0
+  },
+  "inputs": {
+    "source_files": [
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-B_Cu.gbl",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-B_Mask.gbs",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-B_Paste.gbp",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-B_Silkscreen.gbo",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-Edge_Cuts.gm1",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-F_Cu.gtl",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-F_Mask.gts",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-F_Paste.gtp",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-F_Silkscreen.gto",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-In1_Cu.g1",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-In2_Cu.g2",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-job.gbrjob",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable.drl"
+    ],
+    "source_hashes": {
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-B_Cu.gbl": "998f4b15546114e00a70f12b42469b826c1fc6e838d7f500e36ffba5b389d590",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-B_Mask.gbs": "f856fce90df2db08110da7388b6b71eddbb23bd54ecabdabcff8a22f1539215a",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-B_Paste.gbp": "49a94259f0208314025014368497ca76cf7339e9f2379d0cf9a42ef74c230219",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-B_Silkscreen.gbo": "fee78fedd9b17ceb890c1e6c813817499f478942076cef4c2b49dfa0d2217216",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-Edge_Cuts.gm1": "297ed1ca1afc8b8ce8f82e338247aed978f8db11a72e5c6884d42ded7ce55ce2",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-F_Cu.gtl": "250e5879b224453b8fcdace4340197bb191a357d05197c14c8632c06acdd9451",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-F_Mask.gts": "e253f51cdbc726b20220a30cf6fd1bff1940141e2532f1f1ad0e952e03427417",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-F_Paste.gtp": "ecdeaa676cb5381dc4688e8816e36e807fa387a7241e37b47db504bbcec91510",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-F_Silkscreen.gto": "ad14d484f8659f8c76bd58881488d1e1bf12be23a4f73332523426a84e50f9d5",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-In1_Cu.g1": "d8ec1fd8c4914600f98f6ed11e7acb7e6772a88f205301b480ec77364d53becc",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-In2_Cu.g2": "842009700a72b12278548a99299e0dcef0e1694bf329a9c6fb7e3409ee03b2db",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable-job.gbrjob": "0abd0e9d0363a8468289e20b8ffd38c5b321925acc2a2c9e9aa5aaead7450afe",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\manufacturing\\engineering-preview-NOT-FOR-FAB\\gerbers\\Compact-Bluetooth-Wearable.drl": "07e4af9bc81afb528131bda61a7b82b9384e6ea8fa836001b38e5f2515b701c9"
+    },
+    "run_id": "20261020T045938Z-d91383",
+    "config_hash": null,
+    "upstream_artifacts": {}
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "audience_summary": {
+    "designer": {
+      "total_findings": 3,
+      "by_severity": {
+        "error": 0,
+        "warning": 3,
+        "info": 0
+      },
+      "by_category": {
+        "gerber_alignment": 2,
+        "gerber_completeness": 1
+      },
+      "top_issues": [
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-002",
+          "category": "gerber_alignment",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Alignment: Width varies by 6.5mm across copper/edge layers",
+          "description": "Layer alignment issue: Width varies by 6.5mm across copper/edge layers",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+          "report_context": {
+            "section": "Gerber Alignment",
+            "impact": "Layer misregistration",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-002:27e1dcd5f63e"
+        },
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-002",
+          "category": "gerber_alignment",
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "summary": "Alignment: Height varies by 6.9mm across copper/edge layers",
+          "description": "Layer alignment issue: Height varies by 6.9mm across copper/edge layers",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+          "report_context": {
+            "section": "Gerber Alignment",
+            "impact": "Layer misregistration",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-002:4c85073571e3"
+        },
+        {
+          "detector": "analyze_gerbers",
+          "rule_id": "GR-004",
+          "category": "gerber_completeness",
+          "severity": "warning",
+          "confidence": "heuristic",
+          "evidence_source": "topology",
+          "summary": "B paste layer: 10 flashes vs 168 copper (6%)",
+          "description": "B-side paste layer has significantly fewer flashes (10) than copper layer (168). This may indicate missing solder paste apertures.",
+          "components": [],
+          "nets": [],
+          "pins": [],
+          "recommendation": "Check solder paste aperture generation \u2014 missing apertures cause assembly defects.",
+          "report_context": {
+            "section": "Gerber Completeness",
+            "impact": "Assembly solder joint quality",
+            "standard_ref": ""
+          },
+          "stages": [
+            "pre_fab"
+          ],
+          "finding_id": "gerber:GR-004:53512337143a"
+        }
+      ]
+    },
+    "reviewer": {
+      "total_findings": 3,
+      "by_category": {
+        "gerber_alignment": 2,
+        "gerber_completeness": 1
+      },
+      "top_issues": [
+        {
+          "rule_id": "GR-002",
+          "severity": "warning",
+          "summary": "Alignment: Width varies by 6.5mm across copper/edge layers",
+          "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+          "category": "gerber_alignment"
+        },
+        {
+          "rule_id": "GR-002",
+          "severity": "warning",
+          "summary": "Alignment: Height varies by 6.9mm across copper/edge layers",
+          "recommendation": "Re-export gerbers to ensure consistent layer alignment.",
+          "category": "gerber_alignment"
+        },
+        {
+          "rule_id": "GR-004",
+          "severity": "warning",
+          "summary": "B paste layer: 10 flashes vs 168 copper (6%)",
+          "recommendation": "Check solder paste aperture generation \u2014 missing apertures cause assembly defects.",
+          "category": "gerber_completeness"
+        }
+      ]
+    },
+    "manager": {
+      "risk_level": "low",
+      "blocker_count": 0,
+      "warning_count": 3,
+      "stage_readiness": {
+        "schematic": "pass",
+        "layout": "pass",
+        "pre_fab": "needs_review",
+        "bring_up": "pass"
+      },
+      "one_liner": "3 warnings across 2 categories."
+    }
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261020T045938Z-d91383"
+  }
+}

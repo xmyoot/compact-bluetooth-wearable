@@ -1,0 +1,27 @@
+Reference,Qty,Value,Footprint,MPN,Manufacturer,Chosen_Distributor,Datasheet,Validated,DNP,Notes
+"C1,C5,C6",3,10u,0603,GRM188R60J106ME47D,Murata,,,,,
+"C2,C9,C11,C12",4,100n,0603,GRM188R71C104KA01D,Murata,,,,,
+"C3,C4",2,4.7u,0603,GRM188R60J475KE19D,Murata,,,,,
+"C7,C8,C10",3,1u,0603,GRM188R61A105KA61D,Murata,,,,,
+D1,1,STATUS GREEN,0603,LTST-C190KGKT,Lite-On,,,,,
+D2,1,USBLC6-2SC6,SOT-23-6,USBLC6-2SC6,STMicroelectronics,,https://www.st.com/resource/en/datasheet/usblc6-2.pdf,,,
+J1,1,USB-C,USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal,USB4105-GF-A,GCT,,https://gct.co/files/drawings/usb4105.pdf,,,
+J2,1,BATTERY + / NTC / -,JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical,B3B-PH-K-S(LF)(SN),JST,,,,,"Use protected 1S 4.2V LiPo >=200mAh, 10k NTC at cell; verify mating harness polarity. Pack MPN not released."
+J3,1,SWD RECOVERY,PinHeader_1x06_P1.27mm_Vertical,20021121-00006T4LF,Amphenol,,,,,"Optional populated header; debugger must sense target voltage, not power target."
+"R1,R2",2,5.1k,0603,RC0603FR-075K1L,Yageo,,,,,
+"R3,R4",2,27,0603,RC0603FR-0727RL,Yageo,,,,,
+R5,1,8.87k,0603,RC0603FR-078K87L,Yageo,,,,,
+R6,1,3.32k,0603,RC0603FR-073K32L,Yageo,,,,,
+"R7,R8,R9,R10,R13,R14,R15",7,100k,0603,RC0603FR-07100KL,Yageo,,,,,
+"R11,R12",2,4.7k,0603,RC0603FR-074K7L,Yageo,,,,,
+R16,1,1k,0603,RC0603FR-071KL,Yageo,,,,,
+"R17,R18",2,1M,0603,RC0603FR-071ML,Yageo,,,,,
+R19,1,0,0603,RC0603JR-070RL,Yageo,,,,,
+SW1,1,POWER,SW_SPDT_PCM12,PCM12SMTR,C&K,,,,,
+SW2,1,USER / DFU,SW_SPST_TL3342,TL3342F160QG,E-Switch,,,,,
+SW3,1,RESET,SW_SPST_TL3342,TL3342F160QG,E-Switch,,,,,
+U1,1,MDBT50Q-1MV2,Raytac_MDBT50Q,MDBT50Q-1MV2,Raytac,,https://www.raytac.com/download/index.php?index_id=43,,,
+U2,1,BQ24074RGTR,VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,BQ24074RGTR,Texas Instruments,,https://www.ti.com/lit/ds/symlink/bq24074.pdf,,,TMR floating: default timer. ITERM floating: 10% termination. Battery requires external protection and 10k NTC.
+U3,1,TPS7A2030PDBVR,SOT-23-5,TPS7A2030PDBVR,Texas Instruments,,https://www.ti.com/lit/ds/symlink/tps7a20.pdf,,,
+U4,1,LIS3DHTR,LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y,LIS3DHTR,STMicroelectronics,,https://www.st.com/resource/en/datasheet/cd00274221.pdf,,,
+U5,1,TMP117AIDRVR,TMP117_NoPasteEP,TMP117AIDRVR,Texas Instruments,,https://www.ti.com/lit/ds/symlink/tmp117.pdf,,,Exposed pad unsoldered: no paste aperture. Skin-facing package; enclosure thermal contact requires validation.

@@ -1,0 +1,1271 @@
+[
+  {
+    "ref": "U1",
+    "lib": "RF_Module:MDBT50Q-1MV2",
+    "value": "MDBT50Q-1MV2",
+    "fp": "RF_Module:Raytac_MDBT50Q",
+    "nets": {
+      "1": "GND",
+      "2": "GND",
+      "15": "GND",
+      "33": "GND",
+      "55": "GND",
+      "28": "+3V0",
+      "30": "+3V0",
+      "32": "VBUS",
+      "34": "USB_N",
+      "35": "USB_P",
+      "51": "SWDIO",
+      "53": "SWCLK",
+      "40": "RESET_N",
+      "16": "I2C_SCL",
+      "19": "I2C_SDA",
+      "27": "ACC_INT",
+      "29": "TEMP_ALERT",
+      "36": "LED_STATUS",
+      "37": "USER_N",
+      "38": "CHG_EN1",
+      "39": "CHG_EN2",
+      "41": "CHARGE_N",
+      "42": "PGOOD_N",
+      "11": "BAT_SENSE"
+    },
+    "xy": [
+      100.0,
+      89.0
+    ],
+    "sch": [
+      95,
+      85
+    ],
+    "mpn": "MDBT50Q-1MV2",
+    "mfr": "Raytac",
+    "url": "https://www.raytac.com/download/index.php?index_id=43",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "U2",
+    "lib": "Battery_Management:BQ24074RGT",
+    "value": "BQ24074RGTR",
+    "fp": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+    "nets": {
+      "1": "BAT_NTC",
+      "2": "VBAT",
+      "3": "VBAT",
+      "4": "GND",
+      "5": "CHG_EN2",
+      "6": "CHG_EN1",
+      "7": "PGOOD_N",
+      "8": "GND",
+      "9": "CHARGE_N",
+      "10": "VSYS",
+      "11": "VSYS",
+      "12": "ILIM",
+      "13": "VBUS",
+      "16": "ISET",
+      "17": "GND"
+    },
+    "xy": [
+      91.0,
+      109.0
+    ],
+    "sch": [
+      285,
+      65
+    ],
+    "mpn": "BQ24074RGTR",
+    "mfr": "Texas Instruments",
+    "url": "https://www.ti.com/lit/ds/symlink/bq24074.pdf",
+    "angle": 0,
+    "side": "F",
+    "note": "TMR floating: default timer. ITERM floating: 10% termination. Battery requires external protection and 10k NTC."
+  },
+  {
+    "ref": "U3",
+    "lib": "Regulator_Linear:TPS7A20xxxDBV",
+    "value": "TPS7A2030PDBVR",
+    "fp": "Package_TO_SOT_SMD:SOT-23-5",
+    "nets": {
+      "1": "VSYS",
+      "2": "GND",
+      "3": "POWER_EN",
+      "5": "+3V0"
+    },
+    "xy": [
+      91.0,
+      101.0
+    ],
+    "sch": [
+      285,
+      130
+    ],
+    "mpn": "TPS7A2030PDBVR",
+    "mfr": "Texas Instruments",
+    "url": "https://www.ti.com/lit/ds/symlink/tps7a20.pdf",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "U4",
+    "lib": "Sensor_Motion:LIS3DH",
+    "value": "LIS3DHTR",
+    "fp": "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y",
+    "nets": {
+      "1": "+3V0",
+      "4": "I2C_SCL",
+      "5": "GND",
+      "6": "I2C_SDA",
+      "7": "ACC_SA0",
+      "8": "+3V0",
+      "10": "GND",
+      "11": "ACC_INT",
+      "12": "GND",
+      "14": "+3V0",
+      "13": "GND",
+      "15": "GND",
+      "16": "GND"
+    },
+    "xy": [
+      110.0,
+      99.0
+    ],
+    "sch": [
+      465,
+      60
+    ],
+    "mpn": "LIS3DHTR",
+    "mfr": "STMicroelectronics",
+    "url": "https://www.st.com/resource/en/datasheet/cd00274221.pdf",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "U5",
+    "lib": "Sensor_Temperature:TMP117xxDRV",
+    "value": "TMP117AIDRVR",
+    "fp": "Wearable:TMP117_NoPasteEP",
+    "nets": {
+      "1": "I2C_SCL",
+      "2": "GND",
+      "3": "TEMP_ALERT",
+      "4": "GND",
+      "5": "+3V0",
+      "6": "I2C_SDA"
+    },
+    "xy": [
+      114.0,
+      104.0
+    ],
+    "sch": [
+      465,
+      120
+    ],
+    "mpn": "TMP117AIDRVR",
+    "mfr": "Texas Instruments",
+    "url": "https://www.ti.com/lit/ds/symlink/tmp117.pdf",
+    "angle": 0,
+    "side": "B",
+    "note": "Exposed pad unsoldered: no paste aperture. Skin-facing package; enclosure thermal contact requires validation."
+  },
+  {
+    "ref": "J1",
+    "lib": "Connector:USB_C_Receptacle_USB2.0_16P",
+    "value": "USB-C",
+    "fp": "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal",
+    "nets": {
+      "A1": "GND",
+      "B12": "GND",
+      "A4": "VBUS",
+      "B9": "VBUS",
+      "A5": "CC1",
+      "B5": "CC2",
+      "A6": "USB_CONN_P",
+      "B6": "USB_CONN_P",
+      "A7": "USB_CONN_N",
+      "B7": "USB_CONN_N",
+      "A9": "VBUS",
+      "B4": "VBUS",
+      "A12": "GND",
+      "B1": "GND",
+      "SH": "GND"
+    },
+    "xy": [
+      101.0,
+      115.5
+    ],
+    "sch": [
+      80,
+      210
+    ],
+    "mpn": "USB4105-GF-A",
+    "mfr": "GCT",
+    "url": "https://gct.co/files/drawings/usb4105.pdf",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "J2",
+    "lib": "Connector_Generic:Conn_01x03",
+    "value": "BATTERY + / NTC / -",
+    "fp": "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "nets": {
+      "1": "VBAT",
+      "2": "BAT_NTC",
+      "3": "GND"
+    },
+    "xy": [
+      84.5,
+      102.0
+    ],
+    "sch": [
+      280,
+      192
+    ],
+    "mpn": "B3B-PH-K-S(LF)(SN)",
+    "mfr": "JST",
+    "url": "",
+    "angle": 90,
+    "side": "F",
+    "note": "Use protected 1S 4.2V LiPo >=200mAh, 10k NTC at cell; verify mating harness polarity. Pack MPN not released."
+  },
+  {
+    "ref": "J3",
+    "lib": "Connector_Generic:Conn_01x06",
+    "value": "SWD RECOVERY",
+    "fp": "Connector_PinHeader_1.27mm:PinHeader_1x06_P1.27mm_Vertical",
+    "nets": {
+      "1": "+3V0",
+      "2": "SWDIO",
+      "3": "SWCLK",
+      "4": "GND",
+      "5": "RESET_N",
+      "6": "GND"
+    },
+    "xy": [
+      100.5,
+      103.5
+    ],
+    "sch": [
+      90,
+      300
+    ],
+    "mpn": "20021121-00006T4LF",
+    "mfr": "Amphenol",
+    "url": "",
+    "angle": 90,
+    "side": "F",
+    "note": "Optional populated header; debugger must sense target voltage, not power target."
+  },
+  {
+    "ref": "SW1",
+    "lib": "Switch:SW_SPDT",
+    "value": "POWER",
+    "fp": "Button_Switch_SMD:SW_SPDT_PCM12",
+    "nets": {
+      "1": "VSYS",
+      "2": "POWER_EN",
+      "3": "GND"
+    },
+    "xy": [
+      89.0,
+      90.5
+    ],
+    "sch": [
+      285,
+      250
+    ],
+    "mpn": "PCM12SMTR",
+    "mfr": "C&K",
+    "url": "",
+    "angle": 90,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "SW2",
+    "lib": "Switch:SW_Push",
+    "value": "USER / DFU",
+    "fp": "Button_Switch_SMD:SW_SPST_TL3342",
+    "nets": {
+      "1": "USER_N",
+      "2": "GND"
+    },
+    "xy": [
+      111.0,
+      109.0
+    ],
+    "sch": [
+      465,
+      260
+    ],
+    "mpn": "TL3342F160QG",
+    "mfr": "E-Switch",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "SW3",
+    "lib": "Switch:SW_Push",
+    "value": "RESET",
+    "fp": "Button_Switch_SMD:SW_SPST_TL3342",
+    "nets": {
+      "1": "RESET_N",
+      "2": "GND"
+    },
+    "xy": [
+      110.5,
+      91.5
+    ],
+    "sch": [
+      465,
+      300
+    ],
+    "mpn": "TL3342F160QG",
+    "mfr": "E-Switch",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "D1",
+    "lib": "Device:LED",
+    "value": "STATUS GREEN",
+    "fp": "LED_SMD:LED_0603_1608Metric",
+    "nets": {
+      "1": "LED_K",
+      "2": "+3V0"
+    },
+    "xy": [
+      110.0,
+      87.0
+    ],
+    "sch": [
+      465,
+      220
+    ],
+    "mpn": "LTST-C190KGKT",
+    "mfr": "Lite-On",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "D2",
+    "lib": "Power_Protection:USBLC6-2SC6",
+    "value": "USBLC6-2SC6",
+    "fp": "Package_TO_SOT_SMD:SOT-23-6",
+    "nets": {
+      "1": "USB_CONN_P",
+      "3": "USB_CONN_N",
+      "4": "USB_CONN_N",
+      "6": "USB_CONN_P",
+      "2": "GND",
+      "5": "VBUS"
+    },
+    "xy": [
+      102.0,
+      108.5
+    ],
+    "sch": [
+      80,
+      260
+    ],
+    "mpn": "USBLC6-2SC6",
+    "mfr": "STMicroelectronics",
+    "url": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R1",
+    "lib": "Device:R",
+    "value": "5.1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CC1",
+      "2": "GND"
+    },
+    "xy": [
+      93.5,
+      115.0
+    ],
+    "sch": [
+      130,
+      210
+    ],
+    "mpn": "RC0603FR-075K1L",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R2",
+    "lib": "Device:R",
+    "value": "5.1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CC2",
+      "2": "GND"
+    },
+    "xy": [
+      108.5,
+      115.0
+    ],
+    "sch": [
+      160,
+      210
+    ],
+    "mpn": "RC0603FR-075K1L",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R3",
+    "lib": "Device:R",
+    "value": "27",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USB_CONN_P",
+      "2": "USB_P"
+    },
+    "xy": [
+      98.0,
+      100.0
+    ],
+    "sch": [
+      130,
+      255
+    ],
+    "mpn": "RC0603FR-0727RL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 90,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R4",
+    "lib": "Device:R",
+    "value": "27",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USB_CONN_N",
+      "2": "USB_N"
+    },
+    "xy": [
+      98.0,
+      103.5
+    ],
+    "sch": [
+      160,
+      255
+    ],
+    "mpn": "RC0603FR-0727RL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 90,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R5",
+    "lib": "Device:R",
+    "value": "8.87k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "ISET",
+      "2": "GND"
+    },
+    "xy": [
+      87.0,
+      111.0
+    ],
+    "sch": [
+      250,
+      95
+    ],
+    "mpn": "RC0603FR-078K87L",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R6",
+    "lib": "Device:R",
+    "value": "3.32k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "ILIM",
+      "2": "GND"
+    },
+    "xy": [
+      90.0,
+      113.0
+    ],
+    "sch": [
+      280,
+      95
+    ],
+    "mpn": "RC0603FR-073K32L",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R7",
+    "lib": "Device:R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_EN1",
+      "2": "GND"
+    },
+    "xy": [
+      95.0,
+      107.0
+    ],
+    "sch": [
+      310,
+      95
+    ],
+    "mpn": "RC0603FR-07100KL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R8",
+    "lib": "Device:R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CHG_EN2",
+      "2": "GND"
+    },
+    "xy": [
+      94.5,
+      105.0
+    ],
+    "sch": [
+      340,
+      95
+    ],
+    "mpn": "RC0603FR-07100KL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R9",
+    "lib": "Device:R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "PGOOD_N",
+      "2": "+3V0"
+    },
+    "xy": [
+      95.0,
+      103.0
+    ],
+    "sch": [
+      310,
+      192
+    ],
+    "mpn": "RC0603FR-07100KL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R10",
+    "lib": "Device:R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "CHARGE_N",
+      "2": "+3V0"
+    },
+    "xy": [
+      87.0,
+      109.0
+    ],
+    "sch": [
+      340,
+      192
+    ],
+    "mpn": "RC0603FR-07100KL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R11",
+    "lib": "Device:R",
+    "value": "4.7k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "I2C_SCL",
+      "2": "+3V0"
+    },
+    "xy": [
+      111.5,
+      96.0
+    ],
+    "sch": [
+      430,
+      165
+    ],
+    "mpn": "RC0603FR-074K7L",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R12",
+    "lib": "Device:R",
+    "value": "4.7k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "I2C_SDA",
+      "2": "+3V0"
+    },
+    "xy": [
+      114.0,
+      98.0
+    ],
+    "sch": [
+      460,
+      165
+    ],
+    "mpn": "RC0603FR-074K7L",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R13",
+    "lib": "Device:R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "TEMP_ALERT",
+      "2": "+3V0"
+    },
+    "xy": [
+      113.5,
+      102.0
+    ],
+    "sch": [
+      490,
+      165
+    ],
+    "mpn": "RC0603FR-07100KL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R14",
+    "lib": "Device:R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "USER_N",
+      "2": "+3V0"
+    },
+    "xy": [
+      114.0,
+      104.5
+    ],
+    "sch": [
+      500,
+      260
+    ],
+    "mpn": "RC0603FR-07100KL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R15",
+    "lib": "Device:R",
+    "value": "100k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "RESET_N",
+      "2": "+3V0"
+    },
+    "xy": [
+      110.0,
+      104.5
+    ],
+    "sch": [
+      500,
+      300
+    ],
+    "mpn": "RC0603FR-07100KL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R16",
+    "lib": "Device:R",
+    "value": "1k",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "LED_K",
+      "2": "LED_STATUS"
+    },
+    "xy": [
+      115.0,
+      96.0
+    ],
+    "sch": [
+      500,
+      220
+    ],
+    "mpn": "RC0603FR-071KL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R17",
+    "lib": "Device:R",
+    "value": "1M",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "BAT_SENSE"
+    },
+    "xy": [
+      104.5,
+      100.5
+    ],
+    "sch": [
+      130,
+      300
+    ],
+    "mpn": "RC0603FR-071ML",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R18",
+    "lib": "Device:R",
+    "value": "1M",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "BAT_SENSE",
+      "2": "GND"
+    },
+    "xy": [
+      92.0,
+      96.0
+    ],
+    "sch": [
+      160,
+      300
+    ],
+    "mpn": "RC0603FR-071ML",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "R19",
+    "lib": "Device:R",
+    "value": "0",
+    "fp": "Resistor_SMD:R_0603_1608Metric",
+    "nets": {
+      "1": "ACC_SA0",
+      "2": "GND"
+    },
+    "xy": [
+      114.0,
+      100.0
+    ],
+    "sch": [
+      520,
+      165
+    ],
+    "mpn": "RC0603JR-070RL",
+    "mfr": "Yageo",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": "Hard strap SA0 low; internal pull-up override"
+  },
+  {
+    "ref": "C1",
+    "lib": "Device:C",
+    "value": "10u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V0",
+      "2": "GND"
+    },
+    "xy": [
+      101.0,
+      100.5
+    ],
+    "sch": [
+      50,
+      150
+    ],
+    "mpn": "GRM188R60J106ME47D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 180,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C2",
+    "lib": "Device:C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V0",
+      "2": "GND"
+    },
+    "xy": [
+      102.0,
+      98.5
+    ],
+    "sch": [
+      80,
+      150
+    ],
+    "mpn": "GRM188R71C104KA01D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 180,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C3",
+    "lib": "Device:C",
+    "value": "4.7u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VBUS",
+      "2": "GND"
+    },
+    "xy": [
+      105.5,
+      98.5
+    ],
+    "sch": [
+      110,
+      150
+    ],
+    "mpn": "GRM188R60J475KE19D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C4",
+    "lib": "Device:C",
+    "value": "4.7u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VBUS",
+      "2": "GND"
+    },
+    "xy": [
+      91.0,
+      105.5
+    ],
+    "sch": [
+      250,
+      155
+    ],
+    "mpn": "GRM188R60J475KE19D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 180,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C5",
+    "lib": "Device:C",
+    "value": "10u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VBAT",
+      "2": "GND"
+    },
+    "xy": [
+      87.0,
+      107.0
+    ],
+    "sch": [
+      280,
+      155
+    ],
+    "mpn": "GRM188R60J106ME47D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C6",
+    "lib": "Device:C",
+    "value": "10u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VSYS",
+      "2": "GND"
+    },
+    "xy": [
+      93.5,
+      113.0
+    ],
+    "sch": [
+      310,
+      155
+    ],
+    "mpn": "GRM188R60J106ME47D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C7",
+    "lib": "Device:C",
+    "value": "1u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "VSYS",
+      "2": "GND"
+    },
+    "xy": [
+      90.0,
+      98.0
+    ],
+    "sch": [
+      250,
+      220
+    ],
+    "mpn": "GRM188R61A105KA61D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C8",
+    "lib": "Device:C",
+    "value": "1u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V0",
+      "2": "GND"
+    },
+    "xy": [
+      95.0,
+      100.0
+    ],
+    "sch": [
+      280,
+      220
+    ],
+    "mpn": "GRM188R61A105KA61D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C9",
+    "lib": "Device:C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V0",
+      "2": "GND"
+    },
+    "xy": [
+      108.0,
+      96.0
+    ],
+    "sch": [
+      430,
+      190
+    ],
+    "mpn": "GRM188R71C104KA01D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C10",
+    "lib": "Device:C",
+    "value": "1u",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V0",
+      "2": "GND"
+    },
+    "xy": [
+      110.0,
+      102.0
+    ],
+    "sch": [
+      460,
+      190
+    ],
+    "mpn": "GRM188R61A105KA61D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "C11",
+    "lib": "Device:C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "+3V0",
+      "2": "GND"
+    },
+    "xy": [
+      113.0,
+      101.5
+    ],
+    "sch": [
+      490,
+      190
+    ],
+    "mpn": "GRM188R71C104KA01D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 0,
+    "side": "B",
+    "note": ""
+  },
+  {
+    "ref": "C12",
+    "lib": "Device:C",
+    "value": "100n",
+    "fp": "Capacitor_SMD:C_0603_1608Metric",
+    "nets": {
+      "1": "BAT_SENSE",
+      "2": "GND"
+    },
+    "xy": [
+      98.0,
+      109.0
+    ],
+    "sch": [
+      160,
+      340
+    ],
+    "mpn": "GRM188R71C104KA01D",
+    "mfr": "Murata",
+    "url": "",
+    "angle": 0,
+    "side": "F",
+    "note": ""
+  },
+  {
+    "ref": "TP1",
+    "lib": "Connector:TestPoint",
+    "value": "GND",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "GND"
+    },
+    "xy": [
+      90.0,
+      115.0
+    ],
+    "sch": [
+      255,
+      300
+    ],
+    "mpn": "",
+    "mfr": "",
+    "url": "",
+    "angle": 0,
+    "side": "B",
+    "note": "Unpopulated test pad"
+  },
+  {
+    "ref": "TP2",
+    "lib": "Connector:TestPoint",
+    "value": "VBUS",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "VBUS"
+    },
+    "xy": [
+      94.0,
+      116.0
+    ],
+    "sch": [
+      280,
+      300
+    ],
+    "mpn": "",
+    "mfr": "",
+    "url": "",
+    "angle": 0,
+    "side": "B",
+    "note": "Unpopulated test pad"
+  },
+  {
+    "ref": "TP3",
+    "lib": "Connector:TestPoint",
+    "value": "VBAT",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "VBAT"
+    },
+    "xy": [
+      84.0,
+      107.0
+    ],
+    "sch": [
+      305,
+      300
+    ],
+    "mpn": "",
+    "mfr": "",
+    "url": "",
+    "angle": 0,
+    "side": "B",
+    "note": "Unpopulated test pad"
+  },
+  {
+    "ref": "TP4",
+    "lib": "Connector:TestPoint",
+    "value": "VSYS",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "VSYS"
+    },
+    "xy": [
+      85.0,
+      110.0
+    ],
+    "sch": [
+      330,
+      300
+    ],
+    "mpn": "",
+    "mfr": "",
+    "url": "",
+    "angle": 0,
+    "side": "B",
+    "note": "Unpopulated test pad"
+  },
+  {
+    "ref": "TP5",
+    "lib": "Connector:TestPoint",
+    "value": "+3V0",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "+3V0"
+    },
+    "xy": [
+      90.0,
+      96.0
+    ],
+    "sch": [
+      355,
+      300
+    ],
+    "mpn": "",
+    "mfr": "",
+    "url": "",
+    "angle": 0,
+    "side": "B",
+    "note": "Unpopulated test pad"
+  },
+  {
+    "ref": "TP6",
+    "lib": "Connector:TestPoint",
+    "value": "ACC_INT",
+    "fp": "TestPoint:TestPoint_Pad_D1.0mm",
+    "nets": {
+      "1": "ACC_INT"
+    },
+    "xy": [
+      111.0,
+      112.0
+    ],
+    "sch": [
+      380,
+      300
+    ],
+    "mpn": "",
+    "mfr": "",
+    "url": "",
+    "angle": 0,
+    "side": "B",
+    "note": "Unpopulated test pad"
+  }
+]

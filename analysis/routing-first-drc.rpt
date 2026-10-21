@@ -1,0 +1,575 @@
+** Drc report for Compact-Bluetooth-Wearable_routed.kicad_pcb **
+** Created on 2026-10-19T22:00:02 **
+** Report includes: Errors, Warnings **
+
+** Found 135 DRC violations **
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(108.8000 mm, 100.0500 mm): Via [GND] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(114.2000 mm, 105.2000 mm): Via [TEMP_ALERT] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0500 mm)
+    Rule: board setup constraints; error
+    @(90.7500 mm, 110.4375 mm): Via [CHG_EN1] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(98.0000 mm, 95.2500 mm): Via [I2C_SDA] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(101.2000 mm, 95.2500 mm): Via [ACC_INT] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(105.3500 mm, 92.2000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(92.8500 mm, 106.6500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(93.9000 mm, 96.4000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(98.5157 mm, 92.2157 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(99.0500 mm, 92.7500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0750 mm)
+    Rule: board setup constraints; error
+    @(103.1750 mm, 90.1750 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0500 mm)
+    Rule: board setup constraints; error
+    @(92.4375 mm, 109.2500 mm): Via [VSYS] on F.Cu - B.Cu
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0500 mm)
+    Rule: board setup constraints; error
+    @(91.2500 mm, 110.4375 mm): Via [PGOOD_N] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1018 mm)
+    Local override; error
+    @(100.2000 mm, 92.0000 mm): Track [CHARGE_N] on F.Cu, length 1.6000 mm
+    @(100.0750 mm, 91.7750 mm): Track [CHG_EN2] on F.Cu, length 0.0250 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1384 mm)
+    Local override; error
+    @(103.1750 mm, 90.1750 mm): Track [CHG_EN2] on B.Cu, length 1.9092 mm
+    @(103.3000 mm, 90.7000 mm): Track [CHARGE_N] on B.Cu, length 1.8385 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1455 mm)
+    Local override; error
+    @(109.3000 mm, 99.5000 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(108.7750 mm, 99.0000 mm): Pad 3 [<no net>] of U4 on F.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1303 mm)
+    Local override; error
+    @(104.9250 mm, 98.7750 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(102.2000 mm, 95.3000 mm): Track [TEMP_ALERT] on B.Cu, length 6.5054 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1030 mm)
+    Local override; error
+    @(96.4000 mm, 94.9000 mm): Track [PGOOD_N] on F.Cu, length 4.2426 mm
+    @(97.2500 mm, 92.7500 mm): Track [CHG_EN2] on F.Cu, length 0.9500 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1303 mm)
+    Local override; error
+    @(111.2250 mm, 102.8750 mm): Via [I2C_SCL] on F.Cu - B.Cu
+    @(110.4000 mm, 102.8000 mm): Track [USER_N] on F.Cu, length 2.4042 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1034 mm)
+    Local override; error
+    @(103.1750 mm, 90.1750 mm): Via [CHG_EN2] on F.Cu - B.Cu
+    @(103.0000 mm, 90.7000 mm): Via [CHARGE_N] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1036 mm)
+    Local override; error
+    @(99.0500 mm, 92.7500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+    @(96.4000 mm, 94.9000 mm): Track [PGOOD_N] on F.Cu, length 4.2426 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1034 mm)
+    Local override; error
+    @(103.1750 mm, 90.1750 mm): Via [CHG_EN2] on F.Cu - B.Cu
+    @(103.0000 mm, 90.7000 mm): Via [CHARGE_N] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1034 mm)
+    Local override; error
+    @(103.1750 mm, 90.1750 mm): Via [CHG_EN2] on F.Cu - B.Cu
+    @(103.0000 mm, 90.7000 mm): Via [CHARGE_N] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)
+    Local override; error
+    @(92.8500 mm, 106.6500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+    @(90.4000 mm, 106.3000 mm): Track [VBAT] on F.Cu, length 6.0000 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1034 mm)
+    Local override; error
+    @(103.1750 mm, 90.1750 mm): Via [CHG_EN2] on F.Cu - B.Cu
+    @(103.0000 mm, 90.7000 mm): Via [CHARGE_N] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)
+    Local override; error
+    @(93.9000 mm, 96.4000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+    @(94.3000 mm, 96.7000 mm): Track [VBUS] on F.Cu, length 0.5000 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1018 mm)
+    Local override; error
+    @(100.1000 mm, 91.7750 mm): Track [CHG_EN2] on F.Cu, length 0.0354 mm
+    @(99.4000 mm, 92.8000 mm): Track [CHARGE_N] on F.Cu, length 1.1314 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1384 mm)
+    Local override; error
+    @(104.5250 mm, 91.5250 mm): Track [CHG_EN2] on B.Cu, length 0.2500 mm
+    @(103.3000 mm, 90.7000 mm): Track [CHARGE_N] on B.Cu, length 1.8385 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1152 mm)
+    Local override; error
+    @(101.3000 mm, 91.7500 mm): Track [CHG_EN2] on F.Cu, length 2.2274 mm
+    @(103.0000 mm, 90.7000 mm): Via [CHARGE_N] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1018 mm)
+    Local override; error
+    @(100.0750 mm, 91.7750 mm): Track [CHG_EN2] on F.Cu, length 0.0250 mm
+    @(99.4000 mm, 92.8000 mm): Track [CHARGE_N] on F.Cu, length 1.1314 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1056 mm)
+    Local override; error
+    @(100.1250 mm, 91.7500 mm): Track [CHG_EN2] on F.Cu, length 1.1750 mm
+    @(99.4000 mm, 92.8000 mm): Track [CHARGE_N] on F.Cu, length 1.1314 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1030 mm)
+    Local override; error
+    @(98.2000 mm, 92.7500 mm): Track [CHG_EN2] on F.Cu, length 0.4950 mm
+    @(96.4000 mm, 94.9000 mm): Track [PGOOD_N] on F.Cu, length 4.2426 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1076 mm)
+    Local override; error
+    @(94.0250 mm, 96.0750 mm): Track [CHG_EN2] on F.Cu, length 0.0250 mm
+    @(94.3000 mm, 96.7000 mm): Track [VBUS] on F.Cu, length 0.5000 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1030 mm)
+    Local override; error
+    @(99.1750 mm, 92.6750 mm): Track [CHG_EN2] on F.Cu, length 1.2728 mm
+    @(99.4000 mm, 92.8000 mm): Track [CHARGE_N] on F.Cu, length 1.1314 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1056 mm)
+    Local override; error
+    @(94.0000 mm, 96.3000 mm): Track [CHG_EN2] on F.Cu, length 0.2000 mm
+    @(94.3000 mm, 96.7000 mm): Track [VBUS] on F.Cu, length 0.5000 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1152 mm)
+    Local override; error
+    @(92.1750 mm, 103.6250 mm): Track [CHG_EN2] on B.Cu, length 0.8000 mm
+    @(91.2000 mm, 103.2000 mm): Via [CHG_EN1] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1030 mm)
+    Local override; error
+    @(91.6500 mm, 98.9000 mm): Track [CHG_EN2] on B.Cu, length 3.1820 mm
+    @(92.1000 mm, 98.1000 mm): Track [BAT_SENSE] on B.Cu, length 2.3000 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1030 mm)
+    Local override; error
+    @(99.4000 mm, 92.9000 mm): Track [CHARGE_N] on F.Cu, length 0.1000 mm
+    @(99.1750 mm, 92.6750 mm): Track [CHG_EN2] on F.Cu, length 1.2728 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1036 mm)
+    Local override; error
+    @(98.3000 mm, 94.0000 mm): Track [CHARGE_N] on F.Cu, length 1.5556 mm
+    @(99.0500 mm, 92.7500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1482 mm)
+    Local override; error
+    @(94.6000 mm, 95.8000 mm): Track [VBUS] on F.Cu, length 0.4243 mm
+    @(94.3000 mm, 95.7250 mm): Track [CHG_EN2] on F.Cu, length 0.0354 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1076 mm)
+    Local override; error
+    @(94.3000 mm, 96.7000 mm): Track [VBUS] on F.Cu, length 0.5000 mm
+    @(94.0000 mm, 96.1000 mm): Track [CHG_EN2] on F.Cu, length 0.0354 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1076 mm)
+    Local override; error
+    @(94.3000 mm, 96.2000 mm): Track [VBUS] on F.Cu, length 0.4243 mm
+    @(94.0000 mm, 96.1000 mm): Track [CHG_EN2] on F.Cu, length 0.0354 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1100 mm)
+    Local override; error
+    @(93.8789 mm, 96.8000 mm): Track [VBUS] on F.Cu, length 0.0357 mm
+    @(93.9000 mm, 96.4000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1206 mm)
+    Local override; error
+    @(93.8432 mm, 96.8000 mm): Track [VBUS] on F.Cu, length 0.0357 mm
+    @(93.9000 mm, 96.4000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1003 mm)
+    Local override; error
+    @(93.9145 mm, 96.8000 mm): Track [VBUS] on F.Cu, length 0.2855 mm
+    @(93.9000 mm, 96.4000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1250 mm)
+    Local override; error
+    @(107.2000 mm, 99.3000 mm): Track [I2C_SDA] on F.Cu, length 3.3000 mm
+    @(104.9250 mm, 98.7750 mm): Via [I2C_SCL] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1152 mm)
+    Local override; error
+    @(91.2000 mm, 103.2000 mm): Via [CHG_EN1] on F.Cu - B.Cu
+    @(91.3750 mm, 103.6250 mm): Track [CHG_EN2] on B.Cu, length 0.0707 mm
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1000 mm)
+    Local override; error
+    @(92.5000 mm, 105.3000 mm): Track [CHG_EN1] on B.Cu, length 2.5000 mm
+    @(92.8500 mm, 106.6500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[clearance]: Clearance violation ( clearance 0.1500 mm; actual 0.1030 mm)
+    Local override; error
+    @(91.1000 mm, 99.1000 mm): Track [BAT_SENSE] on B.Cu, length 1.4142 mm
+    @(91.6500 mm, 101.5000 mm): Track [CHG_EN2] on B.Cu, length 2.6000 mm
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: netclass 'Default'; error
+    @(103.8000 mm, 93.8000 mm): Via [LED_STATUS] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: netclass 'Default'; error
+    @(105.5000 mm, 92.8000 mm): Via [LED_STATUS] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2000 mm)
+    Rule: netclass 'Default'; error
+    @(108.8000 mm, 100.0500 mm): Via [GND] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2250 mm)
+    Rule: netclass 'Default'; error
+    @(114.2000 mm, 105.2000 mm): Via [TEMP_ALERT] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(90.7500 mm, 110.4375 mm): Via [CHG_EN1] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(98.0000 mm, 95.2500 mm): Via [I2C_SDA] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(101.2000 mm, 95.2500 mm): Via [ACC_INT] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(105.3500 mm, 92.2000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(92.8500 mm, 106.6500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(93.9000 mm, 96.4000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(98.5157 mm, 92.2157 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(99.0500 mm, 92.7500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(103.1750 mm, 90.1750 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(92.4375 mm, 109.2500 mm): Via [VSYS] on F.Cu - B.Cu
+[drill_out_of_range]: Hole size out of range (board setup constraints min hole 0.3000 mm; actual 0.1500 mm)
+    Rule: netclass 'Default'; error
+    @(91.2500 mm, 110.4375 mm): Via [PGOOD_N] on F.Cu - B.Cu
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.1750 mm, 107.5000 mm): Track [CHG_EN2] on F.Cu, length 1.2021 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(93.3250 mm, 106.6500 mm): Track [CHG_EN2] on F.Cu, length 0.4750 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(92.8500 mm, 106.6500 mm): Track [CHG_EN2] on B.Cu, length 2.3500 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(92.1750 mm, 103.6250 mm): Track [CHG_EN2] on B.Cu, length 0.8000 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(91.3750 mm, 103.6250 mm): Track [CHG_EN2] on B.Cu, length 0.0707 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(91.3250 mm, 103.6750 mm): Track [CHG_EN2] on B.Cu, length 0.3000 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(90.7250 mm, 102.4250 mm): Track [CHG_EN2] on B.Cu, length 1.3081 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(91.6500 mm, 101.5000 mm): Track [CHG_EN2] on B.Cu, length 2.6000 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(91.6500 mm, 98.9000 mm): Track [CHG_EN2] on B.Cu, length 3.1820 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(93.9000 mm, 96.6500 mm): Track [CHG_EN2] on B.Cu, length 0.2500 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.0000 mm, 96.3000 mm): Track [CHG_EN2] on F.Cu, length 0.2000 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.0000 mm, 96.1000 mm): Track [CHG_EN2] on F.Cu, length 0.0354 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.0250 mm, 96.0750 mm): Track [CHG_EN2] on F.Cu, length 0.0250 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.0250 mm, 96.0500 mm): Track [CHG_EN2] on F.Cu, length 0.3889 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.3000 mm, 95.7750 mm): Track [CHG_EN2] on F.Cu, length 0.0500 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.3000 mm, 95.7250 mm): Track [CHG_EN2] on F.Cu, length 0.0354 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.3250 mm, 95.7000 mm): Track [CHG_EN2] on F.Cu, length 0.0250 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(97.2500 mm, 92.7500 mm): Track [CHG_EN2] on F.Cu, length 0.9500 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(98.2000 mm, 92.7500 mm): Track [CHG_EN2] on F.Cu, length 0.4950 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(98.5500 mm, 92.2500 mm): Track [CHG_EN2] on B.Cu, length 0.7071 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(99.1750 mm, 92.6750 mm): Track [CHG_EN2] on F.Cu, length 1.2728 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(100.0750 mm, 91.7750 mm): Track [CHG_EN2] on F.Cu, length 0.0250 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(100.1000 mm, 91.7750 mm): Track [CHG_EN2] on F.Cu, length 0.0354 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(100.1250 mm, 91.7500 mm): Track [CHG_EN2] on F.Cu, length 1.1750 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(101.3000 mm, 91.7500 mm): Track [CHG_EN2] on F.Cu, length 2.2274 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(102.8750 mm, 90.1750 mm): Track [CHG_EN2] on F.Cu, length 0.3000 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(103.1750 mm, 90.1750 mm): Track [CHG_EN2] on B.Cu, length 1.9092 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(104.5250 mm, 91.5250 mm): Track [CHG_EN2] on B.Cu, length 0.2500 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(92.8500 mm, 104.3000 mm): Track [CHG_EN2] on B.Cu, length 0.5574 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(92.4843 mm, 103.8794 mm): Track [CHG_EN2] on B.Cu, length 0.3777 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(92.2172 mm, 103.6123 mm): Track [CHG_EN2] on B.Cu, length 0.0441 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(91.0250 mm, 103.6750 mm): Track [CHG_EN2] on B.Cu, length 0.0440 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(90.9829 mm, 103.6878 mm): Track [CHG_EN2] on B.Cu, length 0.3774 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(90.6828 mm, 103.3750 mm): Track [CHG_EN2] on B.Cu, length 0.9509 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(90.7160 mm, 103.4210 mm): Track [CHG_EN2] on B.Cu, length 0.0567 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.3250 mm, 95.6750 mm): Track [CHG_EN2] on F.Cu, length 0.0575 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.3531 mm, 95.6248 mm): Track [CHG_EN2] on F.Cu, length 0.3889 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(94.6281 mm, 95.3498 mm): Track [CHG_EN2] on F.Cu, length 3.6923 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(104.7750 mm, 91.5250 mm): Track [CHG_EN2] on B.Cu, length 0.0445 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(104.8178 mm, 91.5129 mm): Track [CHG_EN2] on B.Cu, length 0.3861 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(105.0908 mm, 91.7859 mm): Track [CHG_EN2] on B.Cu, length 0.4072 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(104.9250 mm, 98.7750 mm): Track [I2C_SCL] on B.Cu, length 1.4849 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(106.0250 mm, 99.8250 mm): Track [I2C_SCL] on F.Cu, length 3.5002 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(108.5000 mm, 102.3000 mm): Track [I2C_SCL] on F.Cu, length 2.1500 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(110.6500 mm, 102.3000 mm): Track [I2C_SCL] on F.Cu, length 0.8132 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(111.2250 mm, 102.8750 mm): Track [I2C_SCL] on B.Cu, length 1.4500 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(111.2250 mm, 101.4250 mm): Track [I2C_SCL] on B.Cu, length 2.7224 mm
+[track_width]: Track width (board setup constraints min width 0.1500 mm; actual 0.0889 mm)
+    Rule: netclass 'Default'; error
+    @(109.3000 mm, 99.5000 mm): Track [I2C_SCL] on F.Cu, length 0.5000 mm
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.4500 mm)
+    Rule: netclass 'Default'; error
+    @(103.8000 mm, 93.8000 mm): Via [LED_STATUS] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.4500 mm)
+    Rule: netclass 'Default'; error
+    @(105.5000 mm, 92.8000 mm): Via [LED_STATUS] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.3500 mm)
+    Rule: netclass 'Default'; error
+    @(108.8000 mm, 100.0500 mm): Via [GND] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.3750 mm)
+    Rule: netclass 'Default'; error
+    @(114.2000 mm, 105.2000 mm): Via [TEMP_ALERT] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(90.7500 mm, 110.4375 mm): Via [CHG_EN1] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.4000 mm)
+    Rule: netclass 'Default'; error
+    @(98.0000 mm, 95.2500 mm): Via [I2C_SDA] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.4000 mm)
+    Rule: netclass 'Default'; error
+    @(101.2000 mm, 95.2500 mm): Via [ACC_INT] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.4000 mm)
+    Rule: netclass 'Default'; error
+    @(105.3500 mm, 92.2000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.3000 mm)
+    Rule: netclass 'Default'; error
+    @(92.8500 mm, 106.6500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.3000 mm)
+    Rule: netclass 'Default'; error
+    @(93.9000 mm, 96.4000 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.3000 mm)
+    Rule: netclass 'Default'; error
+    @(98.5157 mm, 92.2157 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.3000 mm)
+    Rule: netclass 'Default'; error
+    @(99.0500 mm, 92.7500 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.3000 mm)
+    Rule: netclass 'Default'; error
+    @(103.1750 mm, 90.1750 mm): Via [CHG_EN2] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(92.4375 mm, 109.2500 mm): Via [VSYS] on F.Cu - B.Cu
+[via_diameter]: Via diameter (board setup constraints min diameter 0.6000 mm; actual 0.2500 mm)
+    Rule: netclass 'Default'; error
+    @(91.2500 mm, 110.4375 mm): Via [PGOOD_N] on F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(114.3500 mm, 106.0500 mm): Track [GND] on B.Cu, length 0.2000 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(91.8000 mm, 113.0000 mm): Via [GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(91.0000 mm, 109.0000 mm): Via [GND] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(117.8000 mm, 95.0000 mm): Via [GND] on F.Cu - B.Cu
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(97.7364 mm, 104.2000 mm): Track [BAT_SENSE] on F.Cu, length 0.0515 mm
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(110.4000 mm, 99.4000 mm): Track [+3V0] on F.Cu, length 0.1414 mm
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(92.4375 mm, 109.2500 mm): Via [VSYS] on F.Cu - B.Cu
+[via_dangling]: Via is not connected or connected on only one layer
+    Local override; warning
+    @(91.2500 mm, 110.4375 mm): Via [PGOOD_N] on F.Cu - B.Cu
+
+** Found 29 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(85.0000 mm, 98.0000 mm): PTH pad 3 [GND] of J2
+    @(87.0500 mm, 94.8000 mm): Track [GND] on F.Cu, length 1.4500 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(89.9000 mm, 101.0000 mm): Track [GND] on F.Cu, length 0.0375 mm
+    @(91.2750 mm, 98.0000 mm): Pad 2 [GND] of C7 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(91.0000 mm, 109.0000 mm): Pad 17 [GND] of U2 on F.Cu
+    @(89.6000 mm, 109.8000 mm): Track [GND] on F.Cu, length 0.0625 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(91.2750 mm, 98.0000 mm): Pad 2 [GND] of C7 on F.Cu
+    @(87.4750 mm, 94.3750 mm): Track [GND] on F.Cu, length 0.6010 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(91.3200 mm, 97.9600 mm): Track [GND] on In1.Cu, length 0.0447 mm
+    @(92.7750 mm, 96.0000 mm): Pad 2 [GND] of C3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(91.7750 mm, 105.5000 mm): Pad 2 [GND] of C4 on F.Cu
+    @(91.0000 mm, 109.0000 mm): Pad 17 [GND] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(91.8000 mm, 105.4800 mm): Track [GND] on In1.Cu, length 0.0200 mm
+    @(89.9000 mm, 101.0000 mm): Track [GND] on F.Cu, length 0.0375 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(91.9000 mm, 110.5000 mm): Track [GND] on F.Cu, length 0.1414 mm
+    @(91.0000 mm, 109.0000 mm): Pad 17 [GND] of U2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(91.8250 mm, 113.0000 mm): Pad 2 [GND] of R6 on F.Cu
+    @(91.8800 mm, 110.5200 mm): Track [GND] on In1.Cu, length 0.0283 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(92.8000 mm, 96.0000 mm): Track [GND] on F.Cu, length 0.0250 mm
+    @(95.2000 mm, 96.1500 mm): Pad 15 [GND] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(94.8000 mm, 112.5000 mm): Track [GND] on F.Cu, length 0.8000 mm
+    @(91.8250 mm, 113.0000 mm): Pad 2 [GND] of R6 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(94.2800 mm, 115.0000 mm): Track [GND] on In1.Cu, length 0.0200 mm
+    @(94.8000 mm, 112.5000 mm): Track [GND] on F.Cu, length 0.8000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(94.3250 mm, 115.0000 mm): Pad 2 [GND] of R1 on F.Cu
+    @(96.6800 mm, 116.5750 mm): PTH pad SH [GND] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(98.8625 mm, 108.5000 mm): Pad 2 [GND] of D2 on F.Cu
+    @(95.8250 mm, 109.5000 mm): Pad 2 [GND] of R7 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(98.9200 mm, 108.5200 mm): Track [GND] on In1.Cu, length 0.0283 mm
+    @(105.3000 mm, 111.8000 mm): Track [GND] on F.Cu, length 1.1000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(99.3000 mm, 103.0000 mm): Track [GND] on F.Cu, length 0.0250 mm
+    @(95.8000 mm, 100.5200 mm): Track [GND] on In1.Cu, length 0.0200 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(104.8000 mm, 96.1500 mm): Pad 33 [GND] of U1 on F.Cu
+    @(107.3500 mm, 95.4000 mm): Pad 2 [GND] of SW3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(105.3200 mm, 116.5750 mm): PTH pad SH [GND] of J1
+    @(105.3000 mm, 112.4000 mm): Track [GND] on F.Cu, length 4.4000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(106.8100 mm, 103.0000 mm): PTH pad 4 [GND] of J3
+    @(109.3500 mm, 103.0000 mm): PTH pad 6 [GND] of J3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(107.5000 mm, 95.4000 mm): Track [GND] on F.Cu, length 0.1500 mm
+    @(109.5000 mm, 97.7750 mm): Pad 16 [GND] of U4 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.7600 mm, 100.1200 mm): Track [GND] on In1.Cu, length 0.0212 mm
+    @(109.3500 mm, 103.0000 mm): PTH pad 6 [GND] of J3
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(108.7750 mm, 100.0000 mm): Pad 5 [GND] of U4 on F.Cu
+    @(109.6000 mm, 97.8000 mm): Track [GND] on F.Cu, length 0.1000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(109.3000 mm, 112.4000 mm): Track [GND] on F.Cu, length 2.6000 mm
+    @(114.1500 mm, 110.9000 mm): Pad 2 [GND] of SW2 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(111.2000 mm, 97.9000 mm): Track [GND] on F.Cu, length 0.1000 mm
+    @(110.0000 mm, 97.8000 mm): Track [GND] on F.Cu, length 0.0250 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(112.1333 mm, 97.4333 mm): Track [GND] on F.Cu, length 0.0236 mm
+    @(111.2400 mm, 97.8800 mm): Track [GND] on In1.Cu, length 0.0447 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(111.2000 mm, 97.9000 mm): Track [GND] on B.Cu, length 2.8284 mm
+    @(114.7750 mm, 100.0000 mm): Pad 2 [GND] of C9 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(114.8875 mm, 104.0000 mm): Pad 2 [GND] of U5 on B.Cu
+    @(113.2250 mm, 101.0000 mm): Pad 2 [GND] of C11 on B.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(92.4375 mm, 108.7500 mm): Pad 11 [VSYS] of U2 on F.Cu
+    @(88.5000 mm, 104.3000 mm): Track [VSYS] on F.Cu, length 4.9000 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(94.1750 mm, 105.5000 mm): Pad 1 [PGOOD_N] of R9 on F.Cu
+    @(91.2500 mm, 110.4375 mm): Pad 7 [PGOOD_N] of U2 on F.Cu
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

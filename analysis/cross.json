@@ -1,0 +1,482 @@
+{
+  "analyzer_type": "cross_analysis",
+  "schema_version": "1.4.0",
+  "inputs": {
+    "source_files": [
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\schematic.json",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\pcb.json"
+    ],
+    "source_hashes": {
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\schematic.json": "5c4227e10e9939f3b8576f688a47c8239f7f5af30db216385a5481551acb1cae",
+      "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\pcb.json": "c056f7a47b880e2b1ecc9d5755730b3d524c1753a8ed0ae484de79fb9dc5b167"
+    },
+    "run_id": "20261020T045938Z-d91383",
+    "config_hash": null,
+    "upstream_artifacts": {
+      "schematic": {
+        "path": "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\schematic.json",
+        "sha256": "5c4227e10e9939f3b8576f688a47c8239f7f5af30db216385a5481551acb1cae",
+        "schema_version": "1.4.0",
+        "run_id": "20261020T045938Z-d91383"
+      },
+      "pcb": {
+        "path": "C:\\Users\\hecto\\Documents\\KiCAD_Projects\\Compact-Bluetooth-Wearable\\analysis\\pcb.json",
+        "sha256": "c056f7a47b880e2b1ecc9d5755730b3d524c1753a8ed0ae484de79fb9dc5b167",
+        "schema_version": "1.4.0",
+        "run_id": "20261020T045938Z-d91383"
+      }
+    }
+  },
+  "compat": {
+    "minimum_consumer_version": "1.4.0",
+    "deprecated_fields": [],
+    "experimental_fields": []
+  },
+  "elapsed_s": 0.077,
+  "summary": {
+    "total_findings": 5,
+    "by_severity": {
+      "error": 2,
+      "warning": 3,
+      "info": 0
+    }
+  },
+  "findings": [
+    {
+      "detector": "check_critical_net_routing",
+      "rule_id": "NR-001",
+      "category": "signal_routing",
+      "summary": "clock net /SWCLK: 1.6mm from board edge",
+      "description": "High-speed clock net /SWCLK is routed 1.6mm from the board edge. Signals near edges radiate more effectively.",
+      "components": [],
+      "nets": [
+        "/SWCLK"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Re-route /SWCLK at least 2.0mm from board edges.",
+      "report_context": {
+        "section": "Signal Routing",
+        "impact": "Increased EMI radiation and susceptibility",
+        "standard_ref": ""
+      },
+      "finding_id": "cross_analysis:NR-001:/swclk",
+      "stages": [
+        "layout"
+      ]
+    },
+    {
+      "detector": "check_return_path_enhanced",
+      "rule_id": "RP-002",
+      "category": "return_path",
+      "summary": "clock net /SWCLK crosses /GND plane gap",
+      "description": "clock signal /SWCLK crosses a gap in /GND plane on layer F.Cu.",
+      "components": [],
+      "nets": [
+        "/SWCLK",
+        "/GND"
+      ],
+      "pins": [],
+      "severity": "error",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Re-route /SWCLK to avoid the /GND plane gap, or bridge with a stitching capacitor.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "Increased EMI from enlarged return path loop",
+        "standard_ref": ""
+      },
+      "finding_id": "cross_analysis:RP-002:/swclk",
+      "stages": [
+        "layout"
+      ]
+    },
+    {
+      "detector": "check_return_path_enhanced",
+      "rule_id": "RP-002",
+      "category": "return_path",
+      "summary": "i2c net /I2C_SCL crosses /GND plane gap",
+      "description": "i2c signal /I2C_SCL crosses a gap in /GND plane on layer F.Cu.",
+      "components": [],
+      "nets": [
+        "/I2C_SCL",
+        "/GND"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Re-route /I2C_SCL to avoid the /GND plane gap, or bridge with a stitching capacitor.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "Increased EMI from enlarged return path loop",
+        "standard_ref": ""
+      },
+      "finding_id": "cross_analysis:RP-002:/i2c_scl",
+      "stages": [
+        "layout"
+      ]
+    },
+    {
+      "detector": "check_return_path_enhanced",
+      "rule_id": "RP-002",
+      "category": "return_path",
+      "summary": "i2c net /I2C_SDA crosses /GND plane gap",
+      "description": "i2c signal /I2C_SDA crosses a gap in /GND plane on layer F.Cu.",
+      "components": [],
+      "nets": [
+        "/I2C_SDA",
+        "/GND"
+      ],
+      "pins": [],
+      "severity": "warning",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Re-route /I2C_SDA to avoid the /GND plane gap, or bridge with a stitching capacitor.",
+      "report_context": {
+        "section": "Return Path",
+        "impact": "Increased EMI from enlarged return path loop",
+        "standard_ref": ""
+      },
+      "finding_id": "cross_analysis:RP-002:/i2c_sda",
+      "stages": [
+        "layout"
+      ]
+    },
+    {
+      "detector": "check_plane_splits",
+      "rule_id": "PS-002",
+      "category": "plane_integrity",
+      "summary": "/GND plane split: 8 islands, 21 signals crossing",
+      "description": "/GND plane has 8 disconnected islands. Signals crossing: /LED_K, /SWDIO, /SWCLK, /RESET_N, /BAT_SENSE.",
+      "components": [],
+      "nets": [
+        "/GND",
+        "/LED_K",
+        "/SWDIO",
+        "/SWCLK",
+        "/RESET_N",
+        "/BAT_SENSE"
+      ],
+      "pins": [],
+      "severity": "error",
+      "confidence": "deterministic",
+      "evidence_source": "topology",
+      "recommendation": "Bridge the plane gap with copper pour or stitching vias. If zones were modified after the last fill, run KiCad Edit \u2192 Fill All Zones (B) and re-run the analyzer first \u2014 stale zone fills are a common cause of apparent plane splits.",
+      "report_context": {
+        "section": "Plane Integrity",
+        "impact": "Return path discontinuity increases EMI",
+        "standard_ref": ""
+      },
+      "finding_id": "cross_analysis:PS-002:/gnd",
+      "stages": [
+        "layout"
+      ]
+    }
+  ],
+  "assessments": [],
+  "checks_run": [
+    {
+      "check": "CC-001",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 3,
+      "findings": 0
+    },
+    {
+      "check": "EG-001",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 3,
+      "findings": 0
+    },
+    {
+      "check": "DA-001",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 0,
+      "findings": 0
+    },
+    {
+      "check": "XV-001..003",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 50,
+      "findings": 0
+    },
+    {
+      "check": "NR-001",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 868,
+      "findings": 1
+    },
+    {
+      "check": "RP-002",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 868,
+      "findings": 3
+    },
+    {
+      "check": "TW-001",
+      "ran": false,
+      "reason_skipped": "no power regulator current estimates in schematic analysis",
+      "items_examined": 0,
+      "findings": 0
+    },
+    {
+      "check": "PS-002",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 76,
+      "findings": 1
+    },
+    {
+      "check": "VS-002",
+      "ran": true,
+      "reason_skipped": null,
+      "items_examined": 140,
+      "findings": 0
+    },
+    {
+      "check": "DP-005",
+      "ran": false,
+      "reason_skipped": "no differential pairs classified in schematic net_classifications",
+      "items_examined": 0,
+      "findings": 0
+    }
+  ],
+  "trust_summary": {
+    "total_findings": 5,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 5,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 5,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 0
+    },
+    "provenance_coverage_pct": 0.0
+  },
+  "audience_summary": {
+    "designer": {
+      "total_findings": 5,
+      "by_severity": {
+        "error": 2,
+        "warning": 3,
+        "info": 0
+      },
+      "by_category": {
+        "signal_routing": 1,
+        "return_path": 3,
+        "plane_integrity": 1
+      },
+      "top_issues": [
+        {
+          "detector": "check_return_path_enhanced",
+          "rule_id": "RP-002",
+          "category": "return_path",
+          "summary": "clock net /SWCLK crosses /GND plane gap",
+          "description": "clock signal /SWCLK crosses a gap in /GND plane on layer F.Cu.",
+          "components": [],
+          "nets": [
+            "/SWCLK",
+            "/GND"
+          ],
+          "pins": [],
+          "severity": "error",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Re-route /SWCLK to avoid the /GND plane gap, or bridge with a stitching capacitor.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "Increased EMI from enlarged return path loop",
+            "standard_ref": ""
+          },
+          "finding_id": "cross_analysis:RP-002:/swclk",
+          "stages": [
+            "layout"
+          ]
+        },
+        {
+          "detector": "check_plane_splits",
+          "rule_id": "PS-002",
+          "category": "plane_integrity",
+          "summary": "/GND plane split: 8 islands, 21 signals crossing",
+          "description": "/GND plane has 8 disconnected islands. Signals crossing: /LED_K, /SWDIO, /SWCLK, /RESET_N, /BAT_SENSE.",
+          "components": [],
+          "nets": [
+            "/GND",
+            "/LED_K",
+            "/SWDIO",
+            "/SWCLK",
+            "/RESET_N",
+            "/BAT_SENSE"
+          ],
+          "pins": [],
+          "severity": "error",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Bridge the plane gap with copper pour or stitching vias. If zones were modified after the last fill, run KiCad Edit \u2192 Fill All Zones (B) and re-run the analyzer first \u2014 stale zone fills are a common cause of apparent plane splits.",
+          "report_context": {
+            "section": "Plane Integrity",
+            "impact": "Return path discontinuity increases EMI",
+            "standard_ref": ""
+          },
+          "finding_id": "cross_analysis:PS-002:/gnd",
+          "stages": [
+            "layout"
+          ]
+        },
+        {
+          "detector": "check_critical_net_routing",
+          "rule_id": "NR-001",
+          "category": "signal_routing",
+          "summary": "clock net /SWCLK: 1.6mm from board edge",
+          "description": "High-speed clock net /SWCLK is routed 1.6mm from the board edge. Signals near edges radiate more effectively.",
+          "components": [],
+          "nets": [
+            "/SWCLK"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Re-route /SWCLK at least 2.0mm from board edges.",
+          "report_context": {
+            "section": "Signal Routing",
+            "impact": "Increased EMI radiation and susceptibility",
+            "standard_ref": ""
+          },
+          "finding_id": "cross_analysis:NR-001:/swclk",
+          "stages": [
+            "layout"
+          ]
+        },
+        {
+          "detector": "check_return_path_enhanced",
+          "rule_id": "RP-002",
+          "category": "return_path",
+          "summary": "i2c net /I2C_SCL crosses /GND plane gap",
+          "description": "i2c signal /I2C_SCL crosses a gap in /GND plane on layer F.Cu.",
+          "components": [],
+          "nets": [
+            "/I2C_SCL",
+            "/GND"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Re-route /I2C_SCL to avoid the /GND plane gap, or bridge with a stitching capacitor.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "Increased EMI from enlarged return path loop",
+            "standard_ref": ""
+          },
+          "finding_id": "cross_analysis:RP-002:/i2c_scl",
+          "stages": [
+            "layout"
+          ]
+        },
+        {
+          "detector": "check_return_path_enhanced",
+          "rule_id": "RP-002",
+          "category": "return_path",
+          "summary": "i2c net /I2C_SDA crosses /GND plane gap",
+          "description": "i2c signal /I2C_SDA crosses a gap in /GND plane on layer F.Cu.",
+          "components": [],
+          "nets": [
+            "/I2C_SDA",
+            "/GND"
+          ],
+          "pins": [],
+          "severity": "warning",
+          "confidence": "deterministic",
+          "evidence_source": "topology",
+          "recommendation": "Re-route /I2C_SDA to avoid the /GND plane gap, or bridge with a stitching capacitor.",
+          "report_context": {
+            "section": "Return Path",
+            "impact": "Increased EMI from enlarged return path loop",
+            "standard_ref": ""
+          },
+          "finding_id": "cross_analysis:RP-002:/i2c_sda",
+          "stages": [
+            "layout"
+          ]
+        }
+      ]
+    },
+    "reviewer": {
+      "total_findings": 5,
+      "by_category": {
+        "signal_routing": 1,
+        "return_path": 3,
+        "plane_integrity": 1
+      },
+      "top_issues": [
+        {
+          "rule_id": "RP-002",
+          "severity": "error",
+          "summary": "clock net /SWCLK crosses /GND plane gap",
+          "recommendation": "Re-route /SWCLK to avoid the /GND plane gap, or bridge with a stitching capacitor.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "PS-002",
+          "severity": "error",
+          "summary": "/GND plane split: 8 islands, 21 signals crossing",
+          "recommendation": "Bridge the plane gap with copper pour or stitching vias. If zones were modified after the last fill, run KiCad Edit \u2192 Fill All Zones (B) and re-run the analyzer first \u2014 stale zone fills are a common cause of apparent plane splits.",
+          "category": "plane_integrity"
+        },
+        {
+          "rule_id": "NR-001",
+          "severity": "warning",
+          "summary": "clock net /SWCLK: 1.6mm from board edge",
+          "recommendation": "Re-route /SWCLK at least 2.0mm from board edges.",
+          "category": "signal_routing"
+        },
+        {
+          "rule_id": "RP-002",
+          "severity": "warning",
+          "summary": "i2c net /I2C_SCL crosses /GND plane gap",
+          "recommendation": "Re-route /I2C_SCL to avoid the /GND plane gap, or bridge with a stitching capacitor.",
+          "category": "return_path"
+        },
+        {
+          "rule_id": "RP-002",
+          "severity": "warning",
+          "summary": "i2c net /I2C_SDA crosses /GND plane gap",
+          "recommendation": "Re-route /I2C_SDA to avoid the /GND plane gap, or bridge with a stitching capacitor.",
+          "category": "return_path"
+        }
+      ]
+    },
+    "manager": {
+      "risk_level": "moderate",
+      "blocker_count": 2,
+      "warning_count": 3,
+      "stage_readiness": {
+        "schematic": "pass",
+        "layout": "needs_work",
+        "pre_fab": "pass",
+        "bring_up": "pass"
+      },
+      "one_liner": "2 errors, 3 warnings across 3 categories. Layout stage has blockers."
+    }
+  },
+  "capability_mode_ref": {
+    "source": "analysis/capability_mode.json",
+    "run_id": "20261020T045938Z-d91383"
+  }
+}

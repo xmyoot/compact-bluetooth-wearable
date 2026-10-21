@@ -1,0 +1,737 @@
+{
+  "analyzer_type": "lifecycle",
+  "schema_version": "1.4.0",
+  "audit_date": "2026-10-20T16:10:51-07:00",
+  "components_checked": 24,
+  "components_with_mpn": 24,
+  "components_without_mpn": 0,
+  "sources_available": [],
+  "findings": [
+    {
+      "mpn": "20021121-00006T4LF",
+      "references": [
+        "J3"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "20021121-00006T4LF: unknown (1 ref(s))",
+      "description": "Component 20021121-00006T4LF is unknown.",
+      "components": [
+        "J3"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace 20021121-00006T4LF \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "B3B-PH-K-S(LF)(SN)",
+      "references": [
+        "J2"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "B3B-PH-K-S(LF)(SN): unknown (1 ref(s))",
+      "description": "Component B3B-PH-K-S(LF)(SN) is unknown.",
+      "components": [
+        "J2"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace B3B-PH-K-S(LF)(SN) \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "BQ24074RGTR",
+      "references": [
+        "U2"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "BQ24074RGTR: unknown (1 ref(s))",
+      "description": "Component BQ24074RGTR is unknown.",
+      "components": [
+        "U2"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace BQ24074RGTR \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "GRM188R60J106ME47D",
+      "references": [
+        "C1",
+        "C5",
+        "C6"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "GRM188R60J106ME47D: unknown (3 ref(s))",
+      "description": "Component GRM188R60J106ME47D is unknown.",
+      "components": [
+        "C1",
+        "C5",
+        "C6"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace GRM188R60J106ME47D \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "GRM188R60J475KE19D",
+      "references": [
+        "C3",
+        "C4"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "GRM188R60J475KE19D: unknown (2 ref(s))",
+      "description": "Component GRM188R60J475KE19D is unknown.",
+      "components": [
+        "C3",
+        "C4"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace GRM188R60J475KE19D \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "GRM188R61A105KA61D",
+      "references": [
+        "C10",
+        "C7",
+        "C8"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "GRM188R61A105KA61D: unknown (3 ref(s))",
+      "description": "Component GRM188R61A105KA61D is unknown.",
+      "components": [
+        "C10",
+        "C7",
+        "C8"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace GRM188R61A105KA61D \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "GRM188R71C104KA01D",
+      "references": [
+        "C11",
+        "C12",
+        "C2",
+        "C9"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "GRM188R71C104KA01D: unknown (4 ref(s))",
+      "description": "Component GRM188R71C104KA01D is unknown.",
+      "components": [
+        "C11",
+        "C12",
+        "C2",
+        "C9"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace GRM188R71C104KA01D \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "LIS3DHTR",
+      "references": [
+        "U4"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "LIS3DHTR: unknown (1 ref(s))",
+      "description": "Component LIS3DHTR is unknown.",
+      "components": [
+        "U4"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace LIS3DHTR \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "LTST-C190KGKT",
+      "references": [
+        "D1"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "LTST-C190KGKT: unknown (1 ref(s))",
+      "description": "Component LTST-C190KGKT is unknown.",
+      "components": [
+        "D1"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace LTST-C190KGKT \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "MDBT50Q-1MV2",
+      "references": [
+        "U1"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "MDBT50Q-1MV2: unknown (1 ref(s))",
+      "description": "Component MDBT50Q-1MV2 is unknown.",
+      "components": [
+        "U1"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace MDBT50Q-1MV2 \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "PCM12SMTR",
+      "references": [
+        "SW1"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "PCM12SMTR: unknown (1 ref(s))",
+      "description": "Component PCM12SMTR is unknown.",
+      "components": [
+        "SW1"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace PCM12SMTR \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "RC0603FR-07100KL",
+      "references": [
+        "R10",
+        "R13",
+        "R14",
+        "R15",
+        "R19",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "RC0603FR-07100KL: unknown (8 ref(s))",
+      "description": "Component RC0603FR-07100KL is unknown.",
+      "components": [
+        "R10",
+        "R13",
+        "R14",
+        "R15",
+        "R19",
+        "R7",
+        "R8",
+        "R9"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace RC0603FR-07100KL \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "RC0603FR-071KL",
+      "references": [
+        "R16"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "RC0603FR-071KL: unknown (1 ref(s))",
+      "description": "Component RC0603FR-071KL is unknown.",
+      "components": [
+        "R16"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace RC0603FR-071KL \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "RC0603FR-071ML",
+      "references": [
+        "R17",
+        "R18"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "RC0603FR-071ML: unknown (2 ref(s))",
+      "description": "Component RC0603FR-071ML is unknown.",
+      "components": [
+        "R17",
+        "R18"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace RC0603FR-071ML \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "RC0603FR-0727RL",
+      "references": [
+        "R3",
+        "R4"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "RC0603FR-0727RL: unknown (2 ref(s))",
+      "description": "Component RC0603FR-0727RL is unknown.",
+      "components": [
+        "R3",
+        "R4"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace RC0603FR-0727RL \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "RC0603FR-073K32L",
+      "references": [
+        "R6"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "RC0603FR-073K32L: unknown (1 ref(s))",
+      "description": "Component RC0603FR-073K32L is unknown.",
+      "components": [
+        "R6"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace RC0603FR-073K32L \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "RC0603FR-074K7L",
+      "references": [
+        "R11",
+        "R12"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "RC0603FR-074K7L: unknown (2 ref(s))",
+      "description": "Component RC0603FR-074K7L is unknown.",
+      "components": [
+        "R11",
+        "R12"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace RC0603FR-074K7L \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "RC0603FR-075K1L",
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "RC0603FR-075K1L: unknown (2 ref(s))",
+      "description": "Component RC0603FR-075K1L is unknown.",
+      "components": [
+        "R1",
+        "R2"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace RC0603FR-075K1L \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "RC0603FR-078K87L",
+      "references": [
+        "R5"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "RC0603FR-078K87L: unknown (1 ref(s))",
+      "description": "Component RC0603FR-078K87L is unknown.",
+      "components": [
+        "R5"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace RC0603FR-078K87L \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "TL3342F160QG",
+      "references": [
+        "SW2",
+        "SW3"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "TL3342F160QG: unknown (2 ref(s))",
+      "description": "Component TL3342F160QG is unknown.",
+      "components": [
+        "SW2",
+        "SW3"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace TL3342F160QG \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "TMP117AIDRVR",
+      "references": [
+        "U5"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "TMP117AIDRVR: unknown (1 ref(s))",
+      "description": "Component TMP117AIDRVR is unknown.",
+      "components": [
+        "U5"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace TMP117AIDRVR \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "TPS7A2030PDBVR",
+      "references": [
+        "U3"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "TPS7A2030PDBVR: unknown (1 ref(s))",
+      "description": "Component TPS7A2030PDBVR is unknown.",
+      "components": [
+        "U3"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace TPS7A2030PDBVR \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "USB4105-GF-A",
+      "references": [
+        "J1"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "USB4105-GF-A: unknown (1 ref(s))",
+      "description": "Component USB4105-GF-A is unknown.",
+      "components": [
+        "J1"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace USB4105-GF-A \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    },
+    {
+      "mpn": "USBLC6-2SC6",
+      "references": [
+        "D2"
+      ],
+      "status": "unknown",
+      "sources": {},
+      "detector": "audit_bom",
+      "rule_id": "LC-004",
+      "category": "lifecycle",
+      "severity": "info",
+      "confidence": "deterministic",
+      "evidence_source": "api_lookup",
+      "summary": "USBLC6-2SC6: unknown (1 ref(s))",
+      "description": "Component USBLC6-2SC6 is unknown.",
+      "components": [
+        "D2"
+      ],
+      "nets": [],
+      "pins": [],
+      "recommendation": "Replace USBLC6-2SC6 \u2014 part is unknown.",
+      "report_context": {
+        "section": "Lifecycle",
+        "impact": "Supply chain risk",
+        "standard_ref": ""
+      }
+    }
+  ],
+  "lifecycle_summary": {
+    "active": 0,
+    "nrnd": 0,
+    "last_time_buy": 0,
+    "obsolete": 0,
+    "discontinued": 0,
+    "unknown": 24
+  },
+  "summary": {
+    "total_findings": 24,
+    "by_severity": {
+      "error": 0,
+      "warning": 0,
+      "info": 24
+    },
+    "components_checked": 24,
+    "lifecycle_issues": 24,
+    "temperature_issues": 0
+  },
+  "trust_summary": {
+    "total_findings": 24,
+    "trust_level": "high",
+    "by_confidence": {
+      "deterministic": 24,
+      "heuristic": 0,
+      "datasheet_backed": 0
+    },
+    "by_evidence_source": {
+      "datasheet": 0,
+      "topology": 0,
+      "heuristic_rule": 0,
+      "symbol_footprint": 0,
+      "bom": 0,
+      "geometry": 0,
+      "api_lookup": 24
+    },
+    "provenance_coverage_pct": 0.0
+  }
+}

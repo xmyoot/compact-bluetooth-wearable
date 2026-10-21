@@ -1,0 +1,1568 @@
+PAGE 1
+                                                                                 Version: L
+                                                             Issued Date: 2023/05/24
+
+
+      Approval Sheet
+     (產品承認書)
+
+
+產品名稱   (Product)     Bluetooth Low Energy Module
+
+解決方案   (Solution)     Nordic nRF52840 aQFN Package
+
+產品型號  (Model No.)  MDBT50Q – 1MV2 (Chip Antenna)
+
+                 MDBT50Q – P1MV2 (PCB Antenna)
+
+產品料號   (Part No.)    see 4.3 Order Code
+
+
+
+
+                          Working distance (in Meters)
+                                                                  Operating
+       Model          125 Kbps      1 Mbps       2 Mbps                                                             Temperature
+
+  MDBT50Q-1MV2       over 550       over 300       over 150        -40 ~ 85℃
+
+
+  MDBT50Q-P1MV2      over 450     up to 250     up to 120        -40 ~ 85℃
+
+
+                    Working range is tested in open space
+PAGE 2
+Index
+
+
+1.  Overall Introduction ...................................................................................................... 4
+     1.1.   Application ............................................................................................................ 4
+     1.2.   Features ............................................................................................................... 5
+
+
+2.  Product Dimension ....................................................................................................... 7
+     2.1.  PCB Dimensions & Pin Indication ......................................................................... 7
+     2.2.  Recommended Layout of Solder Pad ................................................................... 9
+     2.3.  RF Layout Suggestion (aka Keep-Out Area) ....................................................... 11
+     2.4.   Footprint & Design Guide ................................................................................... 13
+     2.5.   Pin Assignment ................................................................................................... 14
+     2.6.  GPIO Located Near the Radio ............................................................................ 17
+
+
+3.  Main Chip Solution ...................................................................................................... 17
+
+
+4.  Shipment Packaging Information .............................................................................. 18
+     4.1.   Marking on Metal Shield ..................................................................................... 19
+     4.2.   Packaging Info .................................................................................................... 20
+     4.3.   Order Code ......................................................................................................... 22
+
+
+5.  Specification ................................................................................................................ 23
+     5.1.   Absolute Maximum Ratings ................................................................................ 23
+     5.2.   Operating Conditions .......................................................................................... 23
+     5.3.   Electrical Specifications ...................................................................................... 24
+
+
+6.  Block Diagram ............................................................................................................. 30
+
+
+7.  Antenna ........................................................................................................................ 31
+     7.1.  MDBT50Q ........................................................................................................... 31
+     7.2.  MDBT50Q-P ....................................................................................................... 33
+
+
+8.  Reference Circuit ......................................................................................................... 35
+     8.1.  Reg0 DC/DC Enabled ......................................................................................... 36
+     8.2.  Reg0 LDO Mode ................................................................................................. 38
+     8.3.  Reg0 DC/DC and LDO Mode Disabled............................................................... 40
+     8.4.  USB Powered ..................................................................................................... 42
+     8.5.  USB Disabled ..................................................................................................... 46
+
+
+9.   Certification ................................................................................................................. 47
+     9.1.   Declaration ID ..................................................................................................... 47
+     9.2.  FCC Certificate (USA) ........................................................................................ 49
+     9.3.  TELEC Certificate (Japan) .................................................................................. 50
+
+
+
+                                                                                            2
+PAGE 3
+     9.4.  NCC Certificate (Taiwan) .................................................................................... 52
+     9.5.  CE (EU) & RCM (Australia & New Zealand) Test Report .................................... 54
+     9.6.   IC Certificate (Canada) ....................................................................................... 57
+     9.7.  SRRC Certificate (China) .................................................................................... 58
+     9.8.  KC Certificate (South Korea) .............................................................................. 59
+     9.9.  WPC (ETA) Certificate (India) ............................................................................. 60
+    9.10. RoHS & REACH Report ..................................................................................... 62
+     9.11.  End-Product Label .............................................................................................. 62
+
+
+10. Notes and Cautions ..................................................................................................... 64
+
+
+11. Basic Facts for nRF52 Family .................................................................................... 65
+
+
+12. Useful Links ................................................................................................................. 66
+
+
+Full List of Raytac’s BLE Modules .................................................................................... 67
+
+
+Release Note ....................................................................................................................... 71
+
+
+
+
+
+                                                                                            3
+PAGE 4
+1. Overall Introduction
+Raytac’s MDBT50Q & MDBT50Q-P is a BT 5.2 stack (Bluetooth low energy or BLE) module
+designed based on Nordic nRF52840 SoC solution, which incorporates: GPIO, SPI, UART,
+I2C, I2S, PMD, PWM, ADC, NFC and USB interfaces for connecting peripherals and sensors.
+
+
+Features:
+1.  Embedded 2.4GHz transceiver supports Bluetooth 5.2 (                  ), IEEE 802.15.4
+      (       & Zigbee) & 2.4Ghz RF & ANT+ upon customer’s preference.
+2.  Compact size with (L) 15.5 x (W) 10.5 x (H) 2.05 or 2 mm.
+3.  Low power requirements, ultra-low peak, average and idle mode power consumption.
+4.  Be compatible with a large installed base of mobile phones, tablets and computers.
+5.   Fully coverage of BLE software stack.
+6.  BLE & RF transmission switching helps products fit all operation system and most
+    hardware.
+
+1.1.  Application
+‧IoT Networks
+     ‧Smart home (such as door locks, lighting) sensors and controllers
+     ‧Smart city sensor networks
+       ‧Industrial IoT sensors and controllers
+     ‧Connected white goods
+
+‧Personal Area Networks
+     ‧Health / fitness sensor and monitor device
+     ‧Medical device
+ ‧Interactive entertainment devices
+     ‧Advanced remote controls
+     ‧Gaming controller
+ ‧Advanced wearables
+     ‧Connected watches
+     ‧Advanced personal fitness devices
+     ‧Wearables with wireless secure payment
+     ‧Connected Health
+      ‧Virtual/Augmented Reality applications
+
+ ‧High performance HID Controllers
+ ‧Mesh Network
+
+
+
+
+
+                                                                                            4
+PAGE 5
+1.2.  Features
+‧Bluetooth 5, IEEE 802.15.4, 2.4 GHz transceiver
+     ‧-95dBm sensitivity in 1Mbps Bluetooth low energy (BLE) mode
+     ‧-103dBm sensitivity in 125Kbps BLE mode (long range)
+    ‧+8 dBm TX power (down to -20 dBm in 4 dB steps)
+      ‧On-air compatible with nRF52, nRF51, nRF24L and nRF24AP Series
+     ‧Programmable output power from +8dBm to -20dB
+    ‧RSSI (1dB resolution)
+     ‧Supported data rates:
+          ‧Bluetooth 5: 2 Mbps, 1 Mbps, 500 kbps, 125 kbps
+        ‧IEEE 802.15.4-2006: 250 kbps
+          ‧Proprietary 2.4 GHz: 2 Mbps, 1 Mbps
+‧ARM Cortex –M4 32-bit processor with FPU, 64 MHz
+‧Memory: 1MB flash / 256KB RAM
+‧HW accelerated security
+    ‧ARM TrustZone Cryptocell 310 security subsystem
+    ‧128 bit AES / ECB / CCM / AAR co-processor (on-the-fly packet encryption)
+‧Advanced on-chip interfaces
+    ‧USB 2.0 full speed (12Mbps) controller
+    ‧QSPI 32MHz interface
+     ‧High speed 32MHz SPI
+     ‧Type 2 near field communication (NFC-A) tag with wake-on field
+     ‧Programmable peripheral interconnect (PPI)
+    ‧48 general purpose I/O pins
+    ‧EasyDMA automated data transfer between memory and peripherals.
+‧12 bit, 200ksps ADC – 8 configurable channels with programmable gain
+‧4 x 4 channel pulse width modulator (PWM) units with EasyDMA
+‧Audio peripherals : I2S, digital microphone interface (PDM)
+‧5 X 32-bit timers with counter mode
+‧Up to 4 x SPI masters / 3 x SPI slaves with EasyDMA
+‧Up to 2 x I2C compatible 2-wire masters / slaves
+‧2 x UART(CTS/RTS) with EasyDMA
+‧Quadrature decoder (QDEC)
+‧3 x 24-bit real-time counters (RTC)
+
+
+
+
+
+                                                                                            5
+PAGE 6
+‧Flexible power management
+     ‧Supply voltage range 1.7V to 5.5V
+     ‧On-chip DC/DC and LDO regulators with automated low current modes
+     ‧Regulated supply for external components from 1.8V to 3.3V
+     ‧Automated peripheral power management
+     ‧Fast wake-up using 64MHz internal oscillator
+     ‧0.4uA at 3V in System OFF mode, no RAM retention
+     ‧1.5uA at 3V in System ON mode, no RAM retention, wake on RTC
+‧ Nordic SoftDevice ready and with support for concurrent multi-protocol
+
+
+
+
+
+                                                                                            6
+PAGE 7
+2. Product Dimension
+
+2.1. PCB Dimensions & Pin Indication
+
+‧MDBT50Q-1MV2
+
+
+
+
+
+                                                                                            7
+PAGE 8
+‧MDBT50Q-P1MV2
+
+
+
+
+
+                                                                                            8
+PAGE 9
+2.2.  Recommended Layout of Solder Pad
+
+           Graphs are all in Top View, Unit in mm.
+
+
+
+
+
+                                                                                            9
+PAGE 10
+10
+PAGE 11
+2.3.  RF Layout Suggestion (aka Keep-Out Area)
+Make sure to keep the “No Ground Pad” as wider as you can regardless of the size of your
+PCB.
+
+
+No Ground Pad should be included in the corresponding position of the antenna in EACH
+LAYER.
+
+
+Place the module towards the edge of PCB to have better performance than placing it on the
+center.
+
+
+Welcome to send us your layout in PDF for review at service@raytac.com or your contact at
+Raytac with title “Layout reviewing – Raytac Model No. – YOUR company’s name”.
+
+
+
+
+
+                                                                                                  11
+PAGE 12
+12
+PAGE 13
+Examples of “NOT RECOMMENDED” layout
+
+
+
+
+
+2.4.  Footprint & Design Guide
+Please visit “Support” page of our website to download. The package includes footprint,
+2D/3D drawing, reflow graph/solder profile and recommended spec for external 32.768khz.
+
+
+
+
+                                                                                            13
+PAGE 14
+2.5.  Pin Assignment
+
+
+Pin No.  Name         Pin function      Description
+
+(1)      GND          Power            Ground
+
+(2)      GND          Power            Ground
+
+                                              General-purpose I/O
+(3)        P1.10             Digital I/O
+                                                 (standard drive, low frequency I/O only)
+
+                                              General-purpose I/O
+(4)        P1.11             Digital I/O
+                                                 (standard drive, low frequency I/O only)
+
+                                              General-purpose I/O
+(5)        P1.12             Digital I/O
+                                                 (standard drive, low frequency I/O only)
+
+                                              General-purpose I/O
+(6)        P1.13             Digital I/O
+                                                 (standard drive, low frequency I/O only)
+
+                                              General-purpose I/O
+(7)        P1.14             Digital I/O
+                                                 (standard drive, low frequency I/O only)
+
+                                              General-purpose I/O
+(8)        P1.15             Digital I/O
+                                                 (standard drive, low frequency I/O only)
+
+                                              General-purpose I/O
+          P0.03             Digital I/O
+(9)                                              (standard drive, low frequency I/O only)
+
+          AIN1           Analog input        Analog input
+
+                                              General-purpose I/O
+          P0.29             Digital I/O
+(10)                                             (standard drive, low frequency I/O only)
+
+          AIN5           Analog input        Analog input
+
+                                              General-purpose I/O
+          P0.02             Digital I/O
+(11)                                             (standard drive, low frequency I/O only)
+
+          AIN0           Analog input        Analog input
+
+                                              General-purpose I/O
+          P0.31             Digital I/O
+(12)                                             (standard drive, low frequency I/O only)
+
+          AIN7           Analog input        Analog input
+
+                                              General-purpose I/O
+          P0.28             Digital I/O
+(13)                                             (standard drive, low frequency I/O only)
+
+          AIN4           Analog input        Analog input
+
+                                              General-purpose I/O
+          P0.30             Digital I/O
+(14)                                             (standard drive, low frequency I/O only)
+
+          AIN6           Analog input        Analog input
+
+
+
+
+
+                                                                                            14
+PAGE 15
+Pin No.  Name         Pin function      Description
+
+(15)     GND          Power            Ground
+
+(16)       P0.27              Digital I/O          General-purpose I/O
+
+          P0.00              Digital I/O          General-purpose I/O
+(17)
+         XL1            Analog input        Connection for 32.768 kHz crystal
+
+          P0.01              Digital I/O          General-purpose I/O
+(18)
+         XL2            Analog input        Connection for 32.768 kHz crystal
+
+(19)       P0.26              Digital I/O          General-purpose I/O
+
+          P0.04              Digital I/O          General-purpose I/O
+(20)
+         AIN2           Analog input        Analog input
+
+          P0.05              Digital I/O          General-purpose I/O
+(21)
+         AIN3           Analog input        Analog input
+
+(22)       P0.06              Digital I/O          General-purpose I/O
+
+          P0.07              Digital I/O          General-purpose I/O
+(23)
+        TRACECLK     Trace clock         Trace buffer clock
+
+(24)       P0.08              Digital I/O          General-purpose I/O
+
+(25)       P1.08              Digital I/O          General-purpose I/O
+
+          P1.09              Digital I/O          General-purpose I/O
+(26)
+        TRACEDATA3  Trace data         Trace buffer TRACEDATA [3].
+
+          P0.11              Digital I/O          General-purpose I/O
+(27)
+        TRACEDATA2  Trace data         Trace buffer TRACEDATA[2].
+
+(28)     VDD           Power            Power supply
+
+          P0.12              Digital I/O          General-purpose I/O
+(29)
+        TRACEDATA1  Trace data         Trace buffer TRACEDATA [1].
+
+(30)     VDDH         Power             High voltage power supply
+
+(31)     DCCH         Power           DC/DC converter output
+
+(32)     VBUS         Power           5V input for USB 3.3V regulator
+
+(33)     GND          Power            Ground
+
+(34)                 D˗̶̶̶                  Digital I/O        USB D-
+
+(35)      D+                 Digital I/O        USB D+
+
+
+
+
+                                                                                           15
+PAGE 16
+Pin No.  Name         Pin function      Description
+
+(36)       P0.14              Digital I/O           General-purpose digital I/O
+
+(37)       P0.13              Digital I/O           General-purpose digital I/O
+
+(38)       P0.16              Digital I/O           General-purpose digital I/O
+
+(39)       P0.15              Digital I/O           General-purpose digital I/O
+
+                                              General-purpose digital I/O
+          P0.18              Digital I/O
+(40)                                      (recommended usage: QSPI / CSN)
+
+        nRESET                             Configurable as system RESET
+
+(41)       P0.17              Digital I/O           General-purpose digital I/O
+
+                                              General-purpose digital I/O
+(42)       P0.19              Digital I/O
+                                         (recommended usage: (QSPI / SCK)
+
+                                              General-purpose digital I/O
+(43)       P0.21              Digital I/O
+                                         (recommended usage: QSPI)
+
+(44)       P0.20              Digital I/O           General-purpose digital I/O
+
+                                              General-purpose digital I/O
+(45)       P0.23              Digital I/O
+                                         (recommended usage: QSPI)
+
+                                              General-purpose digital I/O
+(46)       P0.22              Digital I/O
+                                         (recommended usage: QSPI)
+
+                                              General-purpose digital I/O
+          P1.00              Digital I/O
+(47)                                      (recommended usage: QSPI)
+
+        TRACEDATA0   Trace data          Trace buffer TRACEDATA [0].
+
+(48)       P0.24              Digital I/O           General-purpose digital I/O
+
+(49)       P0.25              Digital I/O           General-purpose digital I/O
+
+                                              General-purpose I/O
+(50)       P1.02              Digital I/O
+                                                 (standard drive, low frequency I/O only)
+
+(51)     SWDIO        Debug                Serial wire debug I/O for debug and programming
+
+                                              General-purpose I/O
+          P0.09              Digital I/O
+(52)                                              (standard drive, low frequency I/O only)
+
+        NFC1        NFC input        NFC antenna connection
+
+(53)     SWDCLK      Debug                Serial wire debug clock input for debug and programming
+
+                                              General-purpose I/O
+          P0.10              Digital I/O
+(54)                                              (standard drive, low frequency I/O only)
+
+        NFC2        NFC input        NFC antenna connection
+
+
+
+
+
+                                                                                            16
+PAGE 17
+Pin No.  Name         Pin function      Description
+
+(55)     GND          Power            Ground
+
+                                               General-purpose I/O
+(56)       P1.04              Digital I/O
+                                                  (standard drive, low frequency I/O only)
+
+                                               General-purpose I/O
+(57)       P1.06              Digital I/O
+                                                  (standard drive, low frequency I/O only)
+
+                                               General-purpose I/O
+(58)       P1.07              Digital I/O
+                                                  (standard drive, low frequency I/O only)
+
+                                               General-purpose I/O
+(59)       P1.05              Digital I/O
+                                                  (standard drive, low frequency I/O only)
+
+                                               General-purpose I/O
+(60)       P1.03              Digital I/O
+                                                  (standard drive, low frequency I/O only)
+
+                                               General-purpose I/O
+(61)       P1.01              Digital I/O
+                                                  (standard drive, low frequency I/O only)
+
+
+2.6.  GPIO Located Near the Radio
+Please refer to 2.5 Pin Assignment on page 16 to 18 where identifies some GPIO that have
+recommended usage. To maximize RF performance, these GPIO are only available to use
+under standard drive, low frequency I/O only, wrong usage may lead to undesirable
+performance.
+
+
+Low frequency I/O is a signal with a frequency up to 10 kHz. SPI, I2C, UART, PWM are
+NOT low frequency I/O.
+
+3. Main Chip Solution
+
+
+                   RF IC                Crystal Frequency
+
+
+                  Nordic NRF52840            32MHZ
+
+
+      32MHz crystal and RF (VDD) DC/DC inductor (Reg1)
+                  are already inside the module.
+
+
+
+
+
+                                                                                            17
+PAGE 18
+4. Shipment Packaging Information
+
+
+          Model           Antenna             Photo
+
+
+
+     MDBT50Q-1MV2      Chip/Ceramic
+
+
+
+
+
+    MDBT50Q-P1MV2      PCB/Printed
+
+
+
+
+
+Module with one black dot is using revision 1 IC. The one without black dot is using
+revision 2 IC and date code starts from 914 and after.
+
+     - Unit Weight of Module:
+
+    MDBT50Q-1MV2: 0.68 g (±0.02 g) ; MDBT50Q-P1MV2: 0.64 g (±0.02 g)
+
+     - Packaging Type: Anti-static tray or Tape & Reel
+
+
+
+
+
+                                                                                            18
+PAGE 19
+4.1.  Marking on Metal Shield
+Label contexts for date code 839 and after,
+
+
+
+
+
+For date code 833 to 838,
+
+
+
+
+
+There is no marking on metal shield for module(s) with date code before 833.
+
+
+
+
+
+                                                                                            19
+PAGE 20
+4.2.  Packaging Info
+
+4.2.1. Tray Packaging
+Anti-static tray is specifically designed for mass production. It can be used directly on SMT
+automatic machine
+
+Before July 1st, 2022
+
+
+
+
+
+After July 1st, 2022
+
+
+
+
+
+                                                                                            20
+PAGE 21
+4.2.2. Tape & Reel Packaging
+
+
+
+
+
+                                                                                            21
+PAGE 22
+4.3.  Order Code
+Each model has two options of packaging. Please use following part no. when placing order
+to us.
+
+
+       Model                Tray              Tape & Reel
+
+
+   MDBT50Q-1MV2       MD-240A3-007        MD-240A3-007R
+
+
+
+  MDBT50Q-P1MV2      MD-240A3-008        MD-240A3-008R
+
+
+
+      MPQ of Reel packaging is 1,500 pcs and Tray packaging is 88 pcs.
+
+
+
+
+
+                                                                                            22
+PAGE 23
+5. Specification
+
+
+Any technical spec shall refer to Nordic’s official documents as final reference. Contents
+below are from “nRF52840 Product Specification v1.7”, please click to download full spec.
+
+5.1.  Absolute Maximum Ratings
+
+
+
+
+
+5.2.  Operating Conditions
+
+
+
+
+
+                                                                                            23
+PAGE 24
+5.3.  Electrical Specifications
+
+5.3.1. General Radio Characteristics
+
+
+
+
+
+5.3.2. Radio Current Consumption (Transmitter)
+
+
+
+
+
+                                                                                            24
+PAGE 25
+5.3.3. Radio Current Consumption (Receiver)
+
+
+
+
+
+5.3.4. Transmitter Specification
+
+
+
+
+
+5.3.5. RSSI Specifications
+
+
+
+
+
+                                                                                            25
+PAGE 26
+5.3.6. Receiver Operation
+
+
+
+
+
+5.3.7. RX Selectivity
+
+
+
+
+
+                                                                                            26
+PAGE 27
+5.3.8. RX Intermodulation
+
+
+
+
+
+                                                                                            27
+PAGE 28
+5.3.9. Radio Timing Parameters
+
+
+
+
+
+                                                                                            28
+PAGE 29
+5.3.10. CPU
+
+
+
+
+
+5.3.11.  Power Management
+
+
+
+
+
+                                                                                            29
+PAGE 30
+6. Block Diagram
+
+
+
+
+
+                                                                                            30
+PAGE 31
+7. Antenna
+
+7.1. MDBT50Q
+
+
+
+
+
+                                                                                            31
+PAGE 32
+32
+PAGE 33
+7.2.  MDBT50Q-P
+
+
+
+
+
+                                                                                            33
+PAGE 34
+34
+PAGE 35
+8. Reference Circuit
+This chapter shows a different combination of reference circuits. Before getting started,
+please read below notes carefully because it is applied to all the reference circuits.
+
+
+⚫  32MHz crystal and RF (VDD) DC/DC inductor (Reg1) are already inside the module.
+
+
+⚫  Module is pre-programmed with Raytac testing code. Default is using LDO mode
+   and need to add external 32.768khz to work.
+
+
+   You can use DC-DC mode without adding external 32.768khz, they are NOT related
+    events.
+
+
+⚫  When using internal 32.768khz RC oscillator, please remove X2 / C12 / C13.
+
+
+⚫  Recommended L4 spec: 10𝛍H, 0603 Chip Inductor, IDC, min = 80mA, ±20%.
+
+
+⚫  When NOT using NFC, please remove NFC1 / C19 / C21.
+
+
+
+
+
+                                                                                            35
+PAGE 36
+8.1.  Reg0 DC/DC Enabled
+Recommend using when the highest input voltage is equal or greater than 3.6V. Supply
+power from VDDH.
+
+
+
+
+
+                                                                                            36
+PAGE 37
+37
+PAGE 38
+8.2.  Reg0 LDO Mode
+Recommend using when the highest input voltage is equal or greater than 3.6V. Supply
+power from VDDH.
+
+
+
+
+
+                                                                                            38
+PAGE 39
+39
+PAGE 40
+8.3.  Reg0 DC/DC and LDO Mode Disabled
+Recommend using when the highest input voltage is less than 3.6V.
+
+
+
+
+
+                                                                                            40
+PAGE 41
+41
+PAGE 42
+8.4. USB Powered
+Recommend using when power the device via USB.
+
+8.4.1. Reg0 DC/DC Enabled
+
+
+
+
+
+                                                                                            42
+PAGE 43
+43
+PAGE 44
+8.4.2. Reg0 LDO Mode
+
+
+
+
+
+                                                                                            44
+PAGE 45
+45
+PAGE 46
+8.5. USB Disabled
+This circuit only focuses on USB disabled. You can use it to go with other 3 reference circuits.
+Please leave D+ & D- as NC when USB is disabled.
+
+
+
+
+
+                                                                                            46
+PAGE 47
+9. Certification
+
+9.1.  Declaration ID
+
+                      BT 5.1
+
+
+
+
+
+                      BT 5.2
+
+
+
+
+
+                                                                                            47
+PAGE 48
+Profile Description                 Service Description
+
+Alert Notification Profile                      Alert Notification Service
+
+                                      Blood Pressure Service
+Blood Pressure Profile
+                                      Device Information Service
+
+                                         Cycling Speed & Cadence Service
+Cycling Speed & Cadence Profile
+                                      Device Information Service
+
+                                     Glucose Service
+Glucose Profile
+                                      Device Information Service
+
+                                        Health Thermometer Service
+Health Thermometer Profile
+                                      Device Information Service
+
+                                       Heart Rate Service
+Heart Rate Profile
+                                      Device Information Service
+
+                                 HID Service
+HID over GATT Profile
+                                          Battery Service
+
+                                          Link Loss Service
+
+Proximity Profile                       Immediate Alert Service
+
+                              TX Power Service
+
+                                    Running Speed & Cadence Service
+Running Speed & Cadence Profile
+                                      Device Information Service
+
+Time Profile                         Time Profile Service
+
+Glucose Profile (Central)
+
+                               Mesh Provisioning Service
+Mesh Profile
+                               Mesh Proxy Service
+
+
+
+
+
+                                                                                     48
+PAGE 49
+9.2. FCC Certificate (USA)
+
+         BLE  1Mbps & 2Mbps, IEEE 802.15.4 approved.
+
+
+
+
+
+                                                                                            49
+PAGE 50
+9.3.  TELEC Certificate (Japan)
+
+                  BLE   1 Mbps & 2 Mbps
+
+
+
+
+
+                                                                                            50
+PAGE 51
+IEEE 802.15.4
+
+
+
+
+
+                                                        51
+PAGE 52
+9.4. NCC Certificate (Taiwan)
+
+         BLE  1Mbps & 2Mbps, IEEE 802.15.4 approved.
+
+                   MDBT50Q
+
+
+
+
+
+                                                                                            52
+PAGE 53
+MDBT50Q-P
+
+
+
+
+
+                                                        53
+PAGE 54
+9.5. CE (EU) & RCM (Australia & New Zealand) Test Report
+
+                  BLE   1 Mbps & 2 Mbps
+
+
+
+
+
+                                                                                            54
+PAGE 55
+IEEE 802.15.4
+
+
+
+
+
+                                                        55
+PAGE 56
+56
+PAGE 57
+9.6.  IC Certificate (Canada)
+
+         BLE  1Mbps & 2Mbps, IEEE 802.15.4 approved.
+
+
+
+
+
+                                                                                            57
+PAGE 58
+9.7. SRRC Certificate (China)
+
+         BLE  1Mbps & 2Mbps, IEEE 802.15.4 approved.
+
+
+
+
+
+                                                                                            58
+PAGE 59
+9.8. KC Certificate (South Korea)
+
+         BLE  1Mbps & 2Mbps, IEEE 802.15.4 approved.
+
+
+
+
+
+                                                                                            59
+PAGE 60
+9.9. WPC (ETA) Certificate (India)
+
+         BLE  1Mbps & 2Mbps, IEEE 802.15.4 approved.
+
+                   MDBT50Q
+
+
+
+
+
+                                                                                            60
+PAGE 61
+MDBT50Q-P
+
+
+
+
+
+                                                        61
+PAGE 62
+9.10. RoHS & REACH Report
+Please visit “Support” page of our website to download.
+
+
+9.11. End-Product Label
+It is suggested using following content adding to package or user manual or label to obey the
+regulation. Any rules of end-product label shall refer to each certification for final reference.
+
+9.11.1. FCC (USA)
+The FCC statement should be included in the user manual when there is no enough space on
+label. Otherwise, it should be included on the label.
+
+
+“This device complies with part 15 of the FCC rules. Operation is subject to the following two
+conditions. (1) This device may not cause harmful interference. (2) This device must accept
+any interference received, including interference that may cause undesired operation.”
+
+
+The final end product must be labeled in a visible area with the following: “Contain FCC ID:
+SH6MDBT50Q”.
+
+9.11.2. TELEC (Japan)
+When manufacturer is placing the product on the Japanese market, the product must be
+affixed with the following Specified Radio Equipment marking:
+
+
+
+
+
+                                                                                            62
+PAGE 63
+9.11.3. NCC (Taiwan)
+
+請依下列標籤式樣自製標籤，標貼或印鑄於器材本體明顯處，始得販賣或公開陳列。
+
+
+                    Series       標籤樣式
+
+
+           MDBT50Q Series
+
+
+
+           MDBT50Q-P Series
+
+
+
+以MDBT50Q 為例，平台廠商必須於平台上標示字樣「本產品內含射頻模組：ID 編號
+CCAM18LP0820T7」。
+
+
+「平台」定義如下：若器材組裝本案模組，消費者仍能正常使用該器材主要功能，該器材得視
+
+為平台。若器材不組裝本案模組，消費者不能正常使用該器材主要功能，該器材不能視為平台。
+
+該類不同廠牌型號器材組裝本案審驗模組後，須分別申請型式認證。
+
+9.11.4.  IC (Canada)
+The IC statement should be included in the user manual when there is no enough space on
+label. Otherwise, it should be included on the label.
+
+
+“This device complies with Industry Canada license-exempt RSS Standard(s). Operation is
+subject to the following two conditions. (1) This device may not cause harmful interference. (2)
+This device must accept any interference received, including interference that may cause
+undesired operation.
+
+
+Le présent appareil est conforme aux CNR d'Industrie Canada applicables aux appareils
+radio exempts de licence.L'exploitation est autorisée aux deux conditions suivantes: (1)
+l'appareil ne doit pas produire de brouillage, et (2) l'utilisateur de l'appareil doit accepter tout
+brouillage radioélectrique subi, même si le brouillage est susceptible d'en compromettre le
+fonctionnement.”
+
+
+The final end product must be labeled in a visible area with the following: “Contain IC ID:
+8017A-MDBT50Q”.
+
+
+
+
+                                                                                            63
+PAGE 64
+10.  Notes and Cautions
+Module is not designed to last for a lifetime. Like general products, it is expected to be worn
+out after continuous usage through the years. To assure that product will perform better and
+last longer, please make sure you:
+
+
+⚫   Follow the guidelines of this document while designing circuit/end-product. Any
+    discrepancy of core Bluetooth technology and technical specification of IC should refer to
+     definition of Bluetooth Organization and Nordic Semiconductor as final reference.
+
+
+⚫  Do not supply voltage that is not within range of specification.
+
+
+⚫   Eliminate static electricity at any cost when working with the module as it may cause
+    damage. It is highly recommended adding anti-ESD components to circuit design to
+    prevent damage from real-life ESD events. Anti-ESD methods can be also applied in
+    mechanical design.
+
+
+⚫  Do not expose modules under direct sunlight for long duration. Modules should be kept
+   away from humid and salty air conditions, and any corrosive gasses or substances. Store
+        it within -40℃ to +125℃ before and after installation.
+
+
+⚫   Avoid any physical shock, intense stress to the module or its surface.
+
+
+⚫  Do not wash the module. No-Clean Paste is used in production. Washing it will oxidize
+    the metal shield and have chemistry reaction with No-Clean Paste. Functions of the
+    module are not guaranteed if it has been washed.
+
+
+The module is not suitable for life support device or system and not allowed to be used in
+destructive device or systems in any direct or indirect ways. The customer agrees to
+indemnify Raytac for any losses when applying modules in applications such as the ones
+described above.
+
+
+
+
+
+                                                                                            64
+PAGE 65
+11.  Basic Facts for nRF52 Family
+Below chart shows basic spec for Nordic nRF52 family, which is helpful to understand the
+differences between each SoC. Any discrepancy shall refer to Nordic’s technical document as
+final reference.
+
+
+See Full List of Raytac’s BLE Modules for complete model no. of each item.
+
+
+
+
+
+                                                                                            65
+PAGE 66
+12.  Useful Links
+
+⚫   Nordic Infocenter: https://infocenter.nordicsemi.com/index.jsp
+     All the necessary technical files and software development kits of Nordic’s chip are on
+     this website.
+
+
+⚫   Nordic DevZone: https://devzone.nordicsemi.com/questions/
+   A highly recommended website for firmware developer. Interact, discuss and consult with
+    other fellow developers and Nordic’s employees to get answers to your questions. The
+     site also includes tutorials in detail to help you get started.
+
+
+⚫   Official Page of nRF52840 : https://www.nordicsemi.com/eng/Products/nRF52840
+   A brief introduction to nRF52840 and download links for Nordic’s developing software
+    and SoftDevices.
+
+
+
+
+
+                                                                                            66
+PAGE 67
+Full List of Raytac’s BLE Modules
+
+
+⚫ MDBT40 Series
+
+                Nordic                             IC                         Flash
+ Series                    Raytac No.                Antenna   RAM
+                 Solution                            Ver.                    Memory
+
+                         MDBT40-256V3                        16 kb    256 K
+                                                        Chip
+ MDBT40      nRF51822                        3
+                                                      Antenna
+                        MDBT40-256RV3                       32 kb    256 K
+
+
+                         MDBT40-P256V3                       16 kb    256 K
+                                          PCB
+ MDBT40-P     nRF51822                        3
+                                                      Antenna
+                        MDBT40-P256RV3                      32 kb    256 K
+
+
+⚫ MDBT42Q Series (QFN Package IC)
+
+                Nordic                             IC                         Flash
+ Series                    Raytac No.                Antenna   RAM                 Solution                            Ver.                    Memory
+
+              nRF52832   MDBT42Q-512KV2     2               64 kb    512 K
+
+                                                        Chip
+ MDBT42Q     nRF52810   MDBT42Q-192KV2     2                                                      Antenna
+                                                                24 kb    192 K
+              nRF52811   MDBT42Q-192KL      1
+
+
+              nRF52832   MDBT42Q-P512KV2    2               64 kb    512 K
+
+                                          PCB
+ MDBT42Q-P   nRF52810   MDBT42Q-P192KV2    2                                                      Antenna
+                                                               24 kb    192 K
+              nRF52811   MDBT42Q-P192KL     1
+
+
+                                                          u.FL
+ MDBT42Q-U   nRF52832   MDBT42Q-U512KV2    2               64 kb    512 K                                                        Connector
+
+
+
+
+
+                                                                                            67
+PAGE 68
+⚫ MDBT42 Series (WLCSP Package IC)
+
+                Nordic                             IC                         Flash Series                    Raytac No.                Antenna   RAM                 Solution                            Ver.                    Memory
+                                                         Chip MDBT42                 MDBT42-512KV2                                                      Antenna
+              nRF52832                        2               64 kb    512 K
+                                          PCB MDBT42-P               MDBT42-P512KV2                                                      Antenna
+
+
+⚫ MDBT42V Series (WLCSP Package IC)
+
+                Nordic                             IC                         Flash
+ Series                    Raytac No.                Antenna   RAM                 Solution                            Ver.                    Memory
+                                                         Chip
+ MDBT42V                MDBT42V-512KV2                                                      Antenna
+              nRF52832                        2               64 kb    512 K                                          PCB
+ MDBT42V-P              MDBT42V-P512KV2                                                      Antenna
+
+
+⚫ MDBT42T Series (WLCSP Package IC)
+
+                Nordic                             IC                        Flash
+ Series                    Raytac No.                 Antenna  RAM                 Solution                             Ver.                   Memory
+                                                          Chip
+ MDBT42T                MDBT42T-192K                                                        Antenna
+               nRF52805                        1               24 kb    192 K
+                                           PCB
+ MDBT42T-P              MDBT42T-P192K                                                        Antenna
+
+
+⚫ MDBT42TV Series (WLCSP Package IC)
+
+                Nordic                             IC                         Flash
+ Series                    Raytac No.                Antenna   RAM                 Solution                            Ver.                    Memory
+                                                         Chip
+ MDBT42TV               MDBT42TV-192K                                                      Antenna
+              nRF52805                        1               24 kb    192 K
+                                          PCB
+ MDBT42TV-P             MDBT42TV-P192K                                                      Antenna
+
+
+
+
+
+                                                                                            68
+PAGE 69
+⚫ MDBT50Q Series (aQFN Package IC)
+
+                Nordic                             IC                         Flash
+ Series                    Raytac No.                Antenna   RAM                 Solution                            Ver.                    Memory
+
+              nRF52840   MDBT50Q-1MV2       2               256 kb   1 MB
+                                                         Chip
+ MDBT50Q                                                      Antenna
+              nRF52833   MDBT50Q-512K       1               128 kb   512 kb
+
+
+              nRF52840   MDBT50Q-P1MV2      2               256 kb   1 MB
+                                          PCB
+ MDBT50Q-P                                                      Antenna
+              nRF52833   MDBT50Q-P512K      1               128 kb   512 kb
+
+
+              nRF52840   MDBT50Q-U1MV2     2               256 kb   1 MB
+                                                          u.FL
+ MDBT50Q-U                                                        Connector
+              nRF52833   MDBT50Q-U512K      1               128 kb   512 kb
+
+
+                                          PCB
+ Dongle        nRF52840   MDBT50Q-RX         1, 2                256 kb   1 MB
+                                                      Antenna
+
+
+⚫ MDBT50 Series (QFN Package IC)
+
+                Nordic                           IC                           Flash
+ Series                    Raytac No.                Antenna   RAM                 Solution                           Ver.                     Memory
+
+              nRF52820   MDBT50-256R       1                  32 kb    256 kb
+                                                        Chip
+ MDBT50                                                      Antenna
+              nRF52833   MDBT50-512K       1                  128 kb   512 kb
+
+
+              nRF52820   MDBT50-P256R     1                  32 kb    256 kb
+                                          PCB
+ MDBT50-P                                                      Antenna
+              nRF52833   MDBT50-P512K     1                  128 kb   512 kb
+
+
+
+
+
+                                                                                            69
+PAGE 70
+⚫ MDBT53 Series (WLCSP Package IC)
+
+                Nordic                           IC                           Flash
+ Series                    Raytac No.                Antenna   RAM                 Solution                           Ver.                     Memory
+                                                        Chip
+ MDBT53      nRF5340    MDBT53-1M        1                  512 kb   1 MB                                                      Antenna
+
+                                          PCB
+ MDBT53-P     nRF5340    MDBT53-P1M       1                 512 kb   1 MB                                                      Antenna
+
+                                                          u.FL
+ MDBT53-U     nRF5340    MDBT53-U1M       1                 512 kb   1 MB                                                        Connector
+
+
+⚫ MDBT53V Series (WLCSP Package IC)
+
+                Nordic                           IC                           Flash
+ Series                    Raytac No.                Antenna   RAM                 Solution                           Ver.                     Memory
+                                                        Chip
+ MDBT53V     nRF5340    MDBT53V-1M       1                  512 kb   1 MB                                                      Antenna
+
+                                          PCB
+ MDBT53V-P    nRF5340    MDBT53V-P1M      1                 512 kb   1 MB                                                      Antenna
+
+
+
+
+
+                                                                                            70
+PAGE 71
+Release Note
+
+⚫  2017/10/30   Pre-release
+
+
+⚫  2018/01/19  Model no. officially changed to MDBT50Q-1M & MDBT50Q-P1M.
+
+
+⚫  2018/04/10  Version A (1st release)
+
+
+⚫  2018/06/12  Version B
+
+    (1) Added Chapter 4: Shipment Packaging Info and Chapter 7: Antenna.
+
+
+⚫  2018/09/14  Version C
+
+    (1) Added link of design guide in Chapter 2
+
+    (2) Updated photo of module in Chapter 4 and added marking and tray info.
+
+    (3) Updated schematic in Chapter 8 for easier understanding.
+
+    (4) Updated Declaration ID & regional certification info in Chapter 9.
+
+    (5) Added “No-Wash” warning in Chapter 10.
+
+
+⚫  2018/11/01  Version D
+
+    (1) Updated drawing in Chapter 2 for a better understanding of PCB measurement.
+
+    (2) Updated Chapter 4 with new label info.
+
+    (3) Added WPC (ETA) certificates in Chapter 9: Certification.
+
+
+⚫  2019/05/03  Version E
+
+    (1) Updated model no. to MDBT50Q-1MV2 & MDBT50Q-P1MV2 because of revision 2
+      SoC.
+
+    (2) Updated Chapter 4: Shipment Packaging Info with new module photo, model no. and
+      added tape & reel info.
+
+    (3) Updated Chapter 5: Specification corresponding to Nordic’s new nRF52840 Product
+        Specification V1.1.
+
+    (4) Added nRF52811 in Chapter 11: Basic Facts for nRF52 Chips and Full List of
+       Raytac’s BLE Modules.
+
+
+
+
+
+                                                                                            71
+PAGE 72
+⚫  2019/11/04  Version F
+
+    (1) Added wireless range under radio data rate of 125kbps on front page.
+
+    (2) Added tolerance information of PCB size and refined descriptions of layout suggestion
+        in Chapter 2: Product Dimension.
+
+    (3) Updated certification information and added section 11 in Chapter 9: Certification.
+
+    (4) Added nRF52833 to the chart in Chapter 11: Basic Facts of nRF52 Family & Full List
+        of Raytac ‘s BLE Modules.
+
+
+⚫  2020/02/11  Version G
+
+    (1) Corrected description of SWDIO & SWCLK in section 5 and added remarks about low
+       frequency GPIO in section 6 of Chapter 2.
+
+    (2) Refined description of default setting in Chapter 8.
+
+
+⚫  2020/06/19  Version H
+
+    (1) Updated tolerance of PCB size in Chapter 2: Product Dimension.
+
+    (2) Corrected note “D-“ and “D+” in Chapter 8: Reference Circuit
+
+    (3) Added nRF52820 in Chapter 11: Basic Facts of nRF52 Family.
+
+    (4) Updated Full List of Raytac’s BLE modules.
+
+
+⚫  2020/12/30  Version I
+
+    (1) Updated information of T&R in Chapter 4: Shipment Packaging Information.
+
+    (2) Added BT 5.2 SIG approval & NCC Certificate in Chapter 9: Certification.
+
+    (3) Updated table in Chapter 11: Basic Facts for nRF52 Family.
+
+    (4) Updated Full List of Raytac’s BLE Modules
+
+
+⚫  2021/05/28  Version J
+
+    (1) Updated MPQ information for T&R package in Chapter 4: Shipment Packaging
+       Information.
+
+    (2) Updated Chapter 5: Specification corresponding to Nordic’s new nRF52840 Product
+        Specification V1.2
+
+
+
+
+
+                                                                                            72
+PAGE 73
+⚫  2022/07/01  Version K
+
+    (1) Updated Chapter 4: 4.2.1 Tray Packaging with 4.2.2 Tape & Reel Packaging info.
+
+    (2) Updated Chapter 2: 2.3 RF Layout Suggestion (aka Keep-Out Area).
+
+    (3) Updated List of Raytac’s Model no.
+
+    (4) Corrected Schematic and info in Chapter 8: Reference Circuit.
+
+    (5) Updated Chapter 5: Specification corresponding to Nordic’s new nRF52840 Product
+        Specification V1.7.
+
+
+⚫  2023/05/24  Version L
+
+    (1) Updated drawing in Chapter 2 for a better understanding of PCB measurement & RF
+
+       Layout Suggestion.
+
+
+
+
+
+                                                                                            73

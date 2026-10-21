@@ -1,0 +1,6 @@
+GND route (109.6, 98.6) to (110, 102.8) layer 4 segments 18
+GND route (108.775, 100.0) to (108.8, 100.7) layer 0 segments 2
+GND route (108.8, 100.7) to (110, 102.8) layer 4 segments 9
+Added isolated-pad GND drop (108.8, 100.7)
+GND route (111.225, 98.5) to (112.824999, 99.0) layer 0 segments 11
+GND route (111.225, 98.0) to (112.824999, 99.0) layer 0 segments 11

@@ -1,0 +1,182 @@
+CMD: pythonw.exe C:\Users\hecto\Documents\KiCAD_Projects\_tools\KiCadRoutingTools\py_router\route.py C:\Users\hecto\Documents\KiCAD_Projects\Compact-Bluetooth-Wearable\hardware\Compact-Bluetooth-Wearable_escapes.kicad_pcb C:\Users\hecto\Documents\KiCAD_Projects\Compact-Bluetooth-Wearable\hardware\Compact-Bluetooth-Wearable_route-v12.kicad_pcb --nets I2C_SDA I2C_SCL --layers F.Cu In2.Cu B.Cu --track-width 0.15 --clearance 0.15 --via-size 0.6 --via-drill 0.3 --no-fix-drc-settings --escalation off --strict-sizes --same-net-pad-clearance 0.15 --max-iterations 100000 --max-ripup 0 --grid-step 0.05 --no-bga-zones --write-fill
+ENV KNOBS: KICAD_FINALIZE_RIP=0 KICAD_PLANE_FINALIZE=0 KICAD_RIP_PREEXISTING=0
+--clearance 0.15: the Default net class routes at it this run; other classes are honoured (pass --clearance-ceiling to cap every class).
+--hole-to-hole-clearance not given; using 0.2mm [fixed default].
+--board-edge-clearance not given; using 0.25mm [board constraint].
+Loading C:\Users\hecto\Documents\KiCAD_Projects\Compact-Bluetooth-Wearable\hardware\Compact-Bluetooth-Wearable_escapes.kicad_pcb to expand net patterns...
+Routing 2 nets: ['I2C_SDA', 'I2C_SCL']
+Loading C:\Users\hecto\Documents\KiCAD_Projects\Compact-Bluetooth-Wearable\hardware\Compact-Bluetooth-Wearable_escapes.kicad_pcb...
+Using 3 routing layers: ['F.Cu', 'In2.Cu', 'B.Cu']
+  Full-stack: appended 1 unrequested copper layer(s) as FORBIDDEN obstacles (no routing, vias respect their copper): In1.Cu
+  Layer costs: F.Cu=1.0x, In2.Cu=3.0x, B.Cu=3.0x, In1.Cu=-1x
+BGA exclusion zones disabled (all)
+Same-net pad via clearance 0.15mm (from flag, #581): vias stay off same-net pads
+
+Analyzing layer swaps for 2 multi-point net(s) spanning layers...
+  No common layer found for 2 multi-point net(s) (left as-is)
+
+Using MPS ordering strategy...
+MPS: Using segment intersection method (no nets on BGA chips)
+MPS: 2 nets with 1 crossing conflicts detected
+MPS Round 1: 1 units: I2C_SDA
+MPS Round 2: 1 units: I2C_SCL
+
+Routing 2 single-ended net(s)...
+============================================================
+Building base obstacle map...
+Pour guard (#1260): GND pour on In1.Cu: islands left crossable -- 1 hold a routed net's terminal
+Pour guard (#1260): GND pour on In2.Cu: islands left crossable -- 1 hold a routed net's terminal
+Base obstacle map built in 5.27s
+Found 31 unrouted nets in PCB for stub proximity
+Pre-computing net obstacle cache...
+Net obstacle cache built in 0.39s (31 nets)
+Plane fragility: exact-fill geometry (2 filled island(s) from KiCad refill)
+Plane fragility field: 622420 cells near the edges of 2 pour(s) (KICAD_PLANE_FRAGILITY_COST=2.0mm-equiv, DYNAMIC #466 (=0 via KICAD_PLANE_FRAGILITY_DYNAMIC reverts))
+History congestion (#590) armed: +0.1mm-equiv per contest, cap 0.5, escalate 0.0, rip weight 1.0 (radius +0.25mm), frontier weight 0.25
+
+[1/2] Routing I2C_SDA (id=17)
+  Detected multi-point net with 4 pads (Phase 1: main route only)
+  Multi-point net Phase 1: routing longest MST edge (pads 0 and 1, length=17.08mm)
+  Phase 1 routed in 429563 iterations, 19 segments
+  SUCCESS: 19 segments, 2 vias, 429563 iterations, length=29.10mm (stubs=3.09mm) (1.00s)
+
+[2/2] Routing I2C_SCL (id=16)
+  Detected multi-point net with 4 pads (Phase 1: main route only)
+  Multi-point net Phase 1: routing longest MST edge (pads 0 and 2, length=14.42mm)
+  Phase 1 routed in 746328 iterations, 21 segments
+  SUCCESS: 21 segments, 2 vias, 746328 iterations, length=31.67mm (stubs=4.03mm) (1.41s)
+
+Sync pcb_data: 848 -> 808 (kept stubs) -> 848 (after adding 40)
+
+============================================================
+Multi-point Phase 3: Routing 4 tap connections
+============================================================
+Phase 3 order (boxed-in risk first): I2C_SCL, I2C_SDA
+
+I2C_SCL (net 16):
+  Multi-point net Phase 3: routing 2 remaining MST edges (longest first)
+    [1/4] Routing MST edge: pad 2 -> pad 1 (length=5.30mm) target=(107.97, 99.50)
+      Routed in 86 iterations (0.00s)
+    [2/4] Routing MST edge: pad 1 -> pad 3 (length=9.56mm) target=(115.19, 101.85)
+      Routed in 68559 iterations (0.11s)
+  Phase 3 routing complete: 2 edges, 39 total segments, 2 total vias
+  Added 18 tap segments, 0 tap vias
+  #444 seam re-ask: I2C_SCL tree is 1.75x its MST bound -- re-asking whole
+
+  Re-routing I2C_SCL (net 16)...
+  Multi-point net Phase 1: routing longest MST edge (pads 0 and 2, length=14.42mm)
+  Probe: forward=5000, backward=5000 iters, trying forward with full iterations...
+  dynamic iterations (#529): search extended to 200000 (base 100000)
+  No route found after 200000 iterations (forward), trying backward...
+  dynamic iterations (#529): search extended to 536328 (base 100000)
+  Phase 1 routed in 746328 iterations, 21 segments
+    Re-routed main path: 21 segments, 2 vias
+  Multi-point net Phase 3: routing 2 remaining MST edges (longest first)
+    [1/0] Routing MST edge: pad 2 -> pad 1 (length=5.30mm) target=(107.97, 99.50)
+      Routed in 86 iterations (0.00s)
+    [2/0] Routing MST edge: pad 1 -> pad 3 (length=9.56mm) target=(115.19, 101.85)
+      Routed in 68559 iterations (0.11s)
+  Phase 3 routing complete: 2 edges, 39 total segments, 2 total vias
+    Re-routed 18 tap segments, 0 tap vias
+      restore skipped (net 16): saved copper would short other-net copper; left ripped (#134)
+  Net total time: 3.45s, 814973 iterations
+
+I2C_SDA (net 17):
+  Multi-point net Phase 3: routing 2 remaining MST edges (longest first)
+    [3/4] Routing MST edge: pad 1 -> pad 3 (length=6.14mm) target=(112.41, 103.35)
+      Routed in 34784 iterations (0.05s)
+    [4/4] Routing MST edge: pad 3 -> pad 2 (length=5.59mm) target=(112.27, 97.90)
+      Routed in 1 iterations (0.00s)
+  Phase 3 routing complete: 2 edges, 49 total segments, 2 total vias
+  Added 30 tap segments, 0 tap vias
+  #444 seam re-ask: I2C_SDA tree is 1.71x its MST bound -- re-asking whole
+
+  Re-routing I2C_SDA (net 17)...
+  Multi-point net Phase 1: routing longest MST edge (pads 0 and 1, length=17.08mm)
+  Probe: forward=5000, backward=5000 iters, trying forward with full iterations...
+  dynamic iterations (#529): search extended to 200000 (base 100000)
+  No route found after 200000 iterations (forward), trying backward...
+  dynamic iterations (#529): search extended to 219563 (base 100000)
+  Phase 1 routed in 429563 iterations, 19 segments
+    Re-routed main path: 19 segments, 2 vias
+  Multi-point net Phase 3: routing 2 remaining MST edges (longest first)
+    [1/0] Routing MST edge: pad 1 -> pad 3 (length=6.14mm) target=(112.41, 103.35)
+      Routed in 34784 iterations (0.05s)
+    [2/0] Routing MST edge: pad 3 -> pad 2 (length=5.59mm) target=(112.27, 97.90)
+      Routed in 1 iterations (0.00s)
+  Phase 3 routing complete: 2 edges, 49 total segments, 2 total vias
+    Re-routed 30 tap segments, 0 tap vias
+      restore skipped (net 17): saved copper would short other-net copper; left ripped (#134)
+  Net total time: 3.08s, 464348 iterations
+Issue #134 recovery: re-routing 2 net(s) left ripped to avoid a short: I2C_SCL, I2C_SDA
+
+[REROUTE 3/4] Re-routing ripped net I2C_SCL
+  Multi-point net with 4 pads - routing main + taps
+  Multi-point net Phase 1: routing longest MST edge (pads 0 and 2, length=14.42mm)
+  Probe: forward=5000, backward=5000 iters, trying forward with full iterations...
+  dynamic iterations (#529): search extended to 184319 (base 100000)
+  Phase 1 routed in 194319 iterations, 17 segments
+  Multi-point net Phase 3: routing 2 remaining MST edges (longest first)
+    [1/0] Routing MST edge: pad 2 -> pad 1 (length=5.30mm) target=(107.97, 99.50)
+      Routed in 86 iterations (0.00s)
+    [2/0] Routing MST edge: pad 1 -> pad 3 (length=9.56mm) target=(115.19, 101.85)
+      Routed in 66668 iterations (0.10s)
+  Phase 3 routing complete: 2 edges, 35 total segments, 2 total vias
+    Tap routing: 18 segments, 0 vias
+  REROUTE SUCCESS: 35 segments, 2 vias, length=41.32mm (stubs=4.03mm) (0.72s)
+
+[REROUTE 4/4] Re-routing ripped net I2C_SDA
+  Multi-point net with 4 pads - routing main + taps
+  Multi-point net Phase 1: routing longest MST edge (pads 0 and 1, length=17.08mm)
+  Probe: forward=5000, backward=5000 iters, trying forward with full iterations...
+  dynamic iterations (#529): search extended to 557121 (base 100000)
+  Phase 1 routed in 567121 iterations, 35 segments
+  Multi-point net Phase 3: routing 2 remaining MST edges (longest first)
+    [1/0] Routing MST edge: pad 1 -> pad 3 (length=6.14mm) target=(112.41, 103.35)
+      Routed in 40741 iterations (0.06s)
+    [2/0] Routing MST edge: pad 3 -> pad 2 (length=5.59mm) target=(112.27, 97.90)
+      Routed in 1 iterations (0.00s)
+  Phase 3 routing complete: 2 edges, 67 total segments, 3 total vias
+    Tap routing: 32 segments, 0 vias
+  REROUTE SUCCESS: 67 segments, 3 vias, length=32.61mm (stubs=3.09mm) (1.30s)
+Cycle prune: removed 11 redundant loop segment(s) across 2 net(s)
+Octolinear smoothing: collapsed 7 staircase span(s) on 2 net(s), -0.81 mm of copper (#536)
+
+WARNING: 9 stacked-copper finding(s) on the write model (same-net duplicates KiCad will not flag):
+  GND F.Cu: 2 duplicate segments stacked on (111.200, 98.000)-(111.225, 98.000)
+  GND F.Cu: 2 duplicate segments stacked on (112.200, 98.450)-(112.250, 98.500)
+  GND F.Cu: 2 duplicate segments stacked on (112.250, 98.500)-(112.300, 98.500)
+  GND F.Cu: 2 duplicate segments stacked on (112.300, 98.500)-(112.350, 98.550)
+  GND F.Cu: 2 duplicate segments stacked on (112.350, 98.550)-(112.400, 98.550)
+  GND F.Cu: 2 duplicate segments stacked on (112.400, 98.550)-(112.750, 98.900)
+  GND F.Cu: 2 duplicate segments stacked on (112.750, 98.900)-(112.750, 98.950)
+  GND F.Cu: 2 duplicate segments stacked on (112.750, 98.950)-(112.800, 99.000)
+  ... and 1 more
+
+============================================================
+Routing complete
+============================================================
+  Single-ended:  2/2 routed
+  Multi-point:   8/8 pads connected (2 nets)
+  Total vias:    5
+  Total time:    2.41s
+  Iterations:    1,175,891
+  Fragility refresh (#466): 11 windows, 4.31s total
+JSON_SUMMARY: {"routed_single": ["I2C_SDA", "I2C_SCL"], "failed_single": [], "open_single": [], "failed_multipoint": [], "multipoint_nets": 2, "multipoint_pads_connected": 8, "multipoint_pads_total": 8, "multipoint_edges_routed": 6, "multipoint_edges_failed": 0, "ripup_success_pairs": [], "rerouted_pairs": [], "single_ended_target_swaps": [], "layer_swaps": 0, "successful": 2, "failed": 0, "total_time": 2.41, "total_iterations": 1175891, "total_vias": 5, "cleanup_disconnected": [], "min_clearance_used": 0.15, "design_rules": {"escalation_policy": "off", "fab_tier": "auto", "board_floors": {"clearance": 0.15, "track_width": 0.15, "via_diameter": 0.6, "via_drill": 0.3, "board_edge": 0.25}, "count": 0, "nets": [], "narrowed": [], "min_delivered": {}, "fab_tier_escalations": 0, "fab_tier_contexts": [], "fab_tier_target": "advanced", "unsupported_rules": []}, "plane_fragility": {"source": "kicad_refill", "islands": 2, "refill_status": "ok", "why": "the KiCad refill succeeded (memo hit)", "machine_dependent": false}, "pour_guard": {"source": "kicad_refill", "why": "", "pours": [{"net": "GND", "layer": "In1.Cu", "blocked_islands": 0, "blocked_mm2": 0, "crossable_islands": 1, "minor_islands": 0}, {"net": "GND", "layer": "In2.Cu", "blocked_islands": 0, "blocked_mm2": 0, "crossable_islands": 1, "minor_islands": 0}]}, "stacked_copper": [{"category": "stacked-copper", "net": "GND", "layer": "F.Cu", "x": 111.2, "y": 98.0, "detail": "2 duplicate segments stacked on (111.200, 98.000)-(111.225, 98.000)", "size": 0.024999999999991473}, {"category": "stacked-copper", "net": "GND", "layer": "F.Cu", "x": 112.2, "y": 98.45, "detail": "2 duplicate segments stacked on (112.200, 98.450)-(112.250, 98.500)", "size": 0.07071067811865073}, {"category": "stacked-copper", "net": "GND", "layer": "F.Cu", "x": 112.25, "y": 98.5, "detail": "2 duplicate segments stacked on (112.250, 98.500)-(112.300, 98.500)", "size": 0.04999999999999716}, {"category": "stacked-copper", "net": "GND", "layer": "F.Cu", "x": 112.3, "y": 98.5, "detail": "2 duplicate segments stacked on (112.300, 98.500)-(112.350, 98.550)", "size": 0.07071067811865073}, {"category": "stacked-copper", "net": "GND", "layer": "F.Cu", "x": 112.35, "y": 98.55, "detail": "2 duplicate segments stacked on (112.350, 98.550)-(112.400, 98.550)", "size": 0.05000000000001137}, {"category": "stacked-copper", "net": "GND", "layer": "F.Cu", "x": 112.4, "y": 98.55, "detail": "2 duplicate segments stacked on (112.400, 98.550)-(112.750, 98.900)", "size": 0.4949747468305853}, {"category": "stacked-copper", "net": "GND", "layer": "F.Cu", "x": 112.75, "y": 98.9, "detail": "2 duplicate segments stacked on (112.750, 98.900)-(112.750, 98.950)", "size": 0.04999999999999716}, {"category": "stacked-copper", "net": "GND", "layer": "F.Cu", "x": 112.75, "y": 98.95, "detail": "2 duplicate segments stacked on (112.750, 98.950)-(112.800, 99.000)", "size": 0.07071067811865073}, {"category": "stacked-copper", "net": "GND", "layer": "F.Cu", "x": 112.8, "y": 99.0, "detail": "2 duplicate segments stacked on (112.800, 99.000)-(112.825, 99.000)", "size": 0.025000000000005684}], "oracle_check": "disabled", "pad_pairs_connected": 6, "pad_pairs_total": 6, "scope": "run", "env_knobs": {"KICAD_FINALIZE_RIP": "0", "KICAD_PLANE_FINALIZE": "0", "KICAD_RIP_PREEXISTING": "0"}}
+
+Writing output to C:\Users\hecto\Documents\KiCAD_Projects\Compact-Bluetooth-Wearable\hardware\Compact-Bluetooth-Wearable_route-v12.kicad_pcb...
+Successfully wrote C:\Users\hecto\Documents\KiCAD_Projects\Compact-Bluetooth-Wearable\hardware\Compact-Bluetooth-Wearable_route-v12.kicad_pcb
+  Strict collapse (#1063, end of run): removed 3 redundant segment(s) on 2 net(s)
+  Dangling vias (#1166, end of run): removed 1 via(s) joining fewer than two layers and 0 segment(s) of the branches they ended, on 1 net(s)
+VIA_IN_PAD_JSON: {"count": 0, "sites": [], "stamped": 0, "restored": 0, "protected": 0, "unstampable": 0, "site_created": 0, "unprotected": [], "note": "via-in-pad requires IPC-4761 Type VII (filled + capped + plated); state it on the fab drawing or solder wicks into the barrel"}
+JSON_REGRADE: {"board": "file", "graded_nets": 2, "seconds": 0.6, "routed_single": ["I2C_SDA", "I2C_SCL"], "failed_single": [], "open_single": [], "failed_multipoint": [], "multipoint_pads_total": 8, "multipoint_pads_connected": 8, "successful": 2, "failed": 0, "unowned_broken": [], "recovered": [], "broken_by_run": []}
+
+============================================================
+Run complete -- whole run, re-graded on the written board (2 net(s), 0.6s)
+============================================================
+  Single-ended:  2/2 routed
+  Multi-point:   8/8 pads connected
+JSON_IMPROVEMENT_GATE: {"lost": [], "gained": ["I2C_SCL", "I2C_SDA"], "worsened": [], "disconnected_pads_before": 7, "disconnected_pads_after": 1, "nets_compared": 31, "verdict": "accept"}
+JSON_SUMMARY_MIN: {"escalations": 0, "failed": 0, "failed_single": [], "main_loop_time_s": 2.41, "min_clearance_used": 0.15, "multipoint_deficit": 0, "open_single": [], "pad_pairs_open": {"count": 0, "nets": []}, "regraded_nets": 2, "routed": 2, "scope": "merged", "terminal_restores_broken": [], "vias": 5}
+  --write-fill: wrote 2 filled_polygon block(s); the deliverable no longer reads phantom plane opens until refilled
+EXIT=0
